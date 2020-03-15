@@ -129,15 +129,29 @@ $gray-dark:#232020;
         color: $orange;
     }
 }
+.btn-new {
+    background-color: #2A3F54;
+}
 .carousel-item{
     height: 600px;
 } 
 .carousel-item img{
     height: 600px;
 }
+.custom-select{
+    border: 2px solid $gray-dark;
+    color: $gray-dark;
+}
 @media (max-width: 575.98px) { 
     h1{
         font-size: 22px;
+    }
+    #slajder{
+        .carousel-caption{
+            h3{
+                font-size: 17px;
+            }
+        }
     }
     #footer{
         #footerLink{

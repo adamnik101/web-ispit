@@ -170,6 +170,10 @@
   color: #ff7315;
 }
 
+.btn-new {
+  background-color: #2A3F54;
+}
+
 .carousel-item {
   height: 600px;
 }
@@ -178,9 +182,17 @@
   height: 600px;
 }
 
+.custom-select {
+  border: 2px solid #232020;
+  color: #232020;
+}
+
 @media (max-width: 575.98px) {
   h1 {
     font-size: 22px;
+  }
+  #slajder .carousel-caption h3 {
+    font-size: 17px;
   }
   #footer #footerLink {
     font-size: 15px;

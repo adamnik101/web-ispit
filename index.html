@@ -118,23 +118,23 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="img/pas3.jpg" class=" w-100" alt="dog+kid">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption">
                           <h3>Over hundred of happy families!</h3>
-                          <p>Surprise your loved ones with a puppy!</p>
+                          <p class="d-none d-sm-block">Surprise your loved ones with a puppy!</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="img/pas1.jpg" class="d-block w-100" alt="dog+man">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption">
                           <h3>We found home for over a hundred of dogs!</h3>
-                          <p>Why don't you adopt one?</p>
+                          <p class="d-none d-sm-block">Why don't you adopt one?</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="img/pass.jpg" class="d-block w-100" alt="dog+kid">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption">
                           <h3>Best friends of your lifetime!</h3>
-                          <p>They will always be happy to see you!</p>
+                          <p class="d-none d-sm-block">They will always be happy to see you!</p>
                         </div>
                       </div>
                     </div>
@@ -190,50 +190,46 @@
         </div>
     </div>
     <div class="container pb-5 pt-3 search roundD mb-5">
-           <form action="action.php" method="POST" class="form-inline">
-               <div class="form-row">
-                   <div class="form-group p-2 ml-5">
-                       <label for="age" class="p-2 font-weight-bold mr-lg-2">Age:</label>
-                       <select name="age" class="form-control" id="age">
-                           <option value="01">Any</option>
-                           <option value="02">Puppy</option>
-                           <option value="03">Young</option>
-                           <option value="04">Adult</option>
-                           <option value="05">Senior</option>
-                       </select>
-                   </div>
-                   <div class="form-group p-2">
-                    <label for="gender" class="p-2 font-weight-bold">Gender:</label>
-                    <select name="gender" class="form-control" id="gender">
-                        <option value="01">Either</option>
-                        <option value="02">Male</option>
-                        <option value="03">Female</option>
+        <form>
+                <div class="form-row align-items-center justify-content-around">
+                    <div class="col-sm-3 my-1">
+                    <label class="mr-sm-2" for="age">Age:</label>
+                    <select class="custom-select mr-sm-2" id="age">
+                        <option selected>Any</option>
+                        <option value="1">Puppy</option>
+                        <option value="2">Young</option>
+                        <option value="3">Adult</option>
+                        <option value="4">Senior</option>
                     </select>
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="mr-sm-2" for="gender">Gender:</label>
+                        <select class="custom-select mr-sm-2" id="gender">
+                            <option selected>Any</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label class="mr-sm-2" for="size">Size:</label>
+                            <select class="custom-select mr-sm-2" id="size">
+                                <option selected>Any</option>
+                                <option value="1">Small</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Large</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-3 my-1">
+                                <label class="mr-sm-2" for="goodwith">Good with:</label>
+                                <select class="custom-select mr-sm-2" id="goodwith">
+                                    <option selected>Any</option>
+                                    <option value="1">Dogs</option>
+                                    <option value="2">Cats</option>
+                                    <option value="3">Kids</option>
+                                </select>
+                                </div>
                 </div>
-                <div class="form-group p-2">
-                    <label for="size" class="p-2 font-weight-bold">Size:</label>
-                    <select name="size" class="form-control" id="size">
-                        <option value="01">Any</option>
-                        <option value="01">Small</option>
-                        <option value="01">Medium</option>
-                        <option value="01">Large</option>
-                    </select>
-                </div>
-                <div class="form-group p-2">
-                    <label for="good" class="p-2 font-weight-bold">Good with:</label>
-                    <select name="good" class="form-control" id="good">
-                        <option value="01">Any</option>
-                        <option value="01">Dogs</option>
-                        <option value="01">Cats</option>
-                        <option value="01">Kids</option>
-                    </select>
-                </div>
-                <div class="form-group p-2 ml-5">
-                    <a href="#"><button type="button" class="btn btn-dark mr-2">Search!</button></a>
-                    <input class="btn btn-dark" type="reset" value="Reset">
-                </div>
-               </div>
-           </form>
+        </form>
     </div>
 
 
