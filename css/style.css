@@ -170,10 +170,6 @@
   color: #ff7315;
 }
 
-.btn-new {
-  background-color: #2A3F54;
-}
-
 .carousel-item {
   height: 600px;
 }
@@ -185,6 +181,10 @@
 .custom-select {
   border: 2px solid #232020;
   color: #232020;
+}
+
+#kartica {
+  width: 250px;
 }
 
 @media (max-width: 575.98px) {

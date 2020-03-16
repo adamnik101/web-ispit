@@ -129,9 +129,6 @@ $gray-dark:#232020;
         color: $orange;
     }
 }
-.btn-new {
-    background-color: #2A3F54;
-}
 .carousel-item{
     height: 600px;
 } 
@@ -141,6 +138,9 @@ $gray-dark:#232020;
 .custom-select{
     border: 2px solid $gray-dark;
     color: $gray-dark;
+}
+#kartica{
+    width:250px;
 }
 @media (max-width: 575.98px) { 
     h1{
