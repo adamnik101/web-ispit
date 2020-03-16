@@ -14,6 +14,25 @@
     <title>Dogfinder.</title>
 </head>
 <body>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container-fluid fixed-top d-md-none" id="smallResNav">
     <div class="row">
         <div class="col-12">
@@ -244,17 +263,17 @@
       <div class="container mb-5">
       <div class="row">
         <div class="col justify-content-around d-flex p-3">
-          <div class="card" id="kartica">
+          <div class="card">
             <img src="img/laki.jpg" class="card-img-top" alt="dog">
             <div class="card-body">
               <h5 class="card-title">Laki</h5><span class="text-right text-muted">2.5 months</span>
               <p class="card-text">Male, Puppy <br> Los Angeles, CA</p>
-              <a href="#" class="btn btn-dark">Learn more about me!</a>
+              <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Learn more about me!</a>
             </div>
           </div>
         </div>
         <div class="col justify-content-around d-flex p-3">
-          <div class="card" id="kartica">
+          <div class="card">
             <img src="img/laki22.jpg" class="card-img-top" alt="dog">
             <div class="card-body">
               <h5 class="card-title">Seth</h5><span class="text-right text-muted">4 months</span>
@@ -264,7 +283,7 @@
           </div>
         </div>
         <div class="col justify-content-around d-flex p-3">
-          <div class="card" id="kartica">
+          <div class="card">
             <img src="img/laki33.jpg" class="card-img-top" alt="dog">
             <div class="card-body">
               <h5 class="card-title">Elsie</h5><span class="text-right text-muted">4.5 months</span>
@@ -274,14 +293,12 @@
           </div>
         </div>
         <div class="col justify-content-around d-flex p-3">
-          <div class="card" id="kartica">
-            <img src="img/laki.jpg" class="card-img-top" alt="dog">
-            <div class="card-body">
-              <h5 class="card-title">Elsie</h5><span class="text-right text-muted">4.5 months</span>
-              <p class="card-text">Female, Young <br>Houston, TX</p>
-              <a href="#" class="btn btn-dark">Learn more about me!</a>
+         <a href="#" class="text-decoration-none"> <div class="card h-100" id="kartica">
+            <div class="card-body align-items-center d-flex">
+              <h5 class="card-title text-center"><i class="fas fa-paw f-size-80"></i> <br>Click to find 15014 more dogs on Dogfinder.</h5><br>
             </div>
           </div>
+         </a>
         </div>
       </div>
       </div>
@@ -352,6 +369,9 @@ function scrollFunction() {
     document.getElementById("hideNav").style.top = "-500px";
   }
 }
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

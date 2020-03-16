@@ -24,6 +24,24 @@ $gray-dark:#232020;
     transition: top 0.4s;
     z-index: 50;
 }
+// gradient background animation
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#kartica{
+    background: linear-gradient(-45deg, #ee7752, #b34700, $orange, #d5c323);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color:$gray;
+}
 // Animation from top
 @keyframes slide-in-top {
     0% {
@@ -139,7 +157,7 @@ $gray-dark:#232020;
     border: 2px solid $gray-dark;
     color: $gray-dark;
 }
-#kartica{
+.card{
     width:250px;
 }
 @media (max-width: 575.98px) { 
