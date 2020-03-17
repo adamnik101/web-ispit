@@ -52,12 +52,10 @@ body {
   color: #ff7315;
 }
 
-#gore #dole {
-  background-color: #232020;
-}
-
-#gore #dole h2 {
-  color: #ff7315;
+#gore .form-row .input-group .input-group-prepend .input-group-text {
+  color: #3a3535;
+  background-color: #ff7315;
+  font-size: 22px;
 }
 
 .f-size-23 {

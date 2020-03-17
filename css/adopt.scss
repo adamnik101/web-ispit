@@ -52,10 +52,15 @@ body{
             }
         }
     }
-    #dole{
-        background-color: $gray-dark;
-        h2{
-            color: $orange;
+    .form-row{
+        .input-group{
+            .input-group-prepend{
+                .input-group-text{
+                color: $gray;
+                background-color: $orange;
+                font-size: 22px;
+                }
+            }
         }
     }
 }
