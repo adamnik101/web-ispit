@@ -98,4 +98,10 @@ body {
 #footer p, #footer a {
   color: #ff7315;
 }
+
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 22px;
+  }
+}
 /*# sourceMappingURL=adopt.css.map */
