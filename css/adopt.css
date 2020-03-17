@@ -53,6 +53,7 @@ body {
 }
 
 #gore .form-row .input-group .input-group-prepend .input-group-text {
+  width: 45px;
   color: #3a3535;
   background-color: #ff7315;
   font-size: 22px;
