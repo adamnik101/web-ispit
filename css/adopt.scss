@@ -1,0 +1,94 @@
+$orange:#ff7315;
+$gray:#3a3535;
+$gray-dark:#232020;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 69px;
+}
+#nav{
+    background-color: $gray-dark;
+    .navbar{
+        .navbar-brand{
+            color: $orange;
+            font-size: 29px;
+        }
+    }
+    .nav-item{
+        a{
+            border-right: 3px solid transparent;
+            color: $orange;
+            &:hover{
+                color: #f4f4f4;
+                transition: 0.3s;
+                border-right: 3px solid $orange;
+            }
+        }
+    }
+    .form-inline{
+        button{
+            color: $orange;
+            border: 1px solid $orange;
+            &:hover{
+                background-color: $orange;
+                color: $gray-dark;
+            }
+        }
+    }
+}
+#gore{
+    #bread{
+        background-color: $gray-dark;
+        ol{
+        background-color: $gray-dark;
+            li{
+                a{
+                    color: $orange;
+                }
+            }
+        }
+    }
+    #dole{
+        background-color: $gray-dark;
+        h2{
+            color: $orange;
+        }
+    }
+}
+.f-size-23{
+    font-size:23px;
+}
+
+.fa-facebook{
+    color: #4267b2;
+}
+.fa-twitter{
+    color:#1da1f2;
+}
+.fa-youtube{
+    color:#FF0000;
+}
+.fa-pinterest{
+    color:#BD081C;
+}
+.fab{
+    &:hover{
+        color: $orange;
+    }
+}
+.f-size-20{
+    font-size: 20px;
+}
+.f-size-35{
+    font-size: 35px;
+}
+#footer{
+    background-color: $gray-dark;
+    p, a{
+        color:$orange;
+    }
+}

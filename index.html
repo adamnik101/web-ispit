@@ -7,32 +7,13 @@
     <!-- Web icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Dogfinder.</title>
 </head>
 <body>
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
     <div class="container-fluid fixed-top d-md-none" id="smallResNav">
     <div class="row">
         <div class="col-12">
@@ -108,7 +89,7 @@
                         <div class="col-lg-12">
                                 <ul class="nav flex-lg-column justify-content-center slide-in-left">
                                     <li class="nav-item"><a href="#" class="d-block p-lg-4 p-3 font-weight-bold orange text-decoration-none"><i class="fas fa-home pr-lg-4 pr-md-2 f-size-23"></i> Homepage</a></li>
-                                    <li class="nav-item"><a href="#" class="d-block p-lg-4 p-3 font-weight-bold orange text-decoration-none"><i class="fas fa-dog pr-lg-4 pr-md-2 f-size-23"></i> Adopt a pet</a></li>
+                                    <li class="nav-item"><a href="adopt.html" class="d-block p-lg-4 p-3 font-weight-bold orange text-decoration-none"><i class="fas fa-dog pr-lg-4 pr-md-2 f-size-23"></i> Adopt a pet</a></li>
                                     <li class="nav-item"><a href="#" class="d-block p-lg-4 p-3 font-weight-bold orange text-decoration-none"><i class="fas fa-donate pr-lg-4 pr-md-2 f-size-23"></i> Donate</a></li>
                                     <li class="nav-item"><a href="#" class="d-block p-lg-4 p-3 font-weight-bold orange text-decoration-none"><i class="fas fa-address-book pr-lg-4 pr-md-2 f-size-23"></i> About Us</a></li>
                                 </ul>
@@ -212,7 +193,7 @@
         <form>
                 <div class="form-row align-items-center justify-content-around">
                     <div class="col-sm-3 my-1">
-                    <label class="mr-sm-2" for="age">Age:</label>
+                    <label class="mr-sm-2 font-weight-bold" for="age">Age:</label>
                     <select class="custom-select mr-sm-2" id="age">
                         <option selected>Any</option>
                         <option value="1">Puppy</option>
@@ -222,7 +203,7 @@
                     </select>
                     </div>
                     <div class="col-sm-3 my-1">
-                        <label class="mr-sm-2" for="gender">Gender:</label>
+                        <label class="mr-sm-2 font-weight-bold" for="gender">Gender:</label>
                         <select class="custom-select mr-sm-2" id="gender">
                             <option selected>Any</option>
                             <option value="1">Male</option>
@@ -230,7 +211,7 @@
                         </select>
                         </div>
                         <div class="col-sm-3 my-1">
-                            <label class="mr-sm-2" for="size">Size:</label>
+                            <label class="mr-sm-2 font-weight-bold" for="size">Size:</label>
                             <select class="custom-select mr-sm-2" id="size">
                                 <option selected>Any</option>
                                 <option value="1">Small</option>
@@ -239,7 +220,7 @@
                             </select>
                             </div>
                             <div class="col-sm-3 my-1">
-                                <label class="mr-sm-2" for="goodwith">Good with:</label>
+                                <label class="mr-sm-2 font-weight-bold" for="goodwith">Good with:</label>
                                 <select class="custom-select mr-sm-2" id="goodwith">
                                     <option selected>Any</option>
                                     <option value="1">Dogs</option>
@@ -268,7 +249,7 @@
             <div class="card-body">
               <h5 class="card-title">Laki</h5><span class="text-right text-muted">2.5 months</span>
               <p class="card-text">Male, Puppy <br> Los Angeles, CA</p>
-              <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Learn more about me!</a>
+              <a href="#" class="btn btn-dark">Learn more about me!</a>
             </div>
           </div>
         </div>
@@ -295,7 +276,7 @@
         <div class="col justify-content-around d-flex p-3">
          <a href="#" class="text-decoration-none"> <div class="card h-100" id="kartica">
             <div class="card-body align-items-center d-flex">
-              <h5 class="card-title text-center"><i class="fas fa-paw f-size-80"></i> <br>Click to find 15014 more dogs on Dogfinder.</h5><br>
+              <h5 class="card-title text-center"><i class="fas fa-search-plus f-size-80"></i> <br>Click to find 15014 more dogs on Dogfinder.</h5><br>
             </div>
           </div>
          </a>
