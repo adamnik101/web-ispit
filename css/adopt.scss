@@ -76,6 +76,21 @@ body{
         }
     }
 }
+.card{
+    border: none;
+    .card-img-top{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .card-body{
+        background-color: #f4f4f4;
+    }
+    .card-footer{
+        border-radius: 0px;
+        border-bottom: 3px solid $orange;
+        background-color: $gray-dark;
+    }
+}
 .f-size-23{
     font-size:23px;
 }

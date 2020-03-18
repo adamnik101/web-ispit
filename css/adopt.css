@@ -72,6 +72,25 @@ body {
   color: #ff7315;
 }
 
+.card {
+  border: none;
+}
+
+.card .card-img-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.card .card-body {
+  background-color: #f4f4f4;
+}
+
+.card .card-footer {
+  border-radius: 0px;
+  border-bottom: 3px solid #ff7315;
+  background-color: #232020;
+}
+
 .f-size-23 {
   font-size: 23px;
 }
