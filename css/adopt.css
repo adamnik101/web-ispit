@@ -54,9 +54,22 @@ body {
 
 #gore .form-row .input-group .input-group-prepend .input-group-text {
   width: 45px;
-  color: #3a3535;
-  background-color: #ff7315;
+  color: #ff7315;
+  background-color: #232020;
   font-size: 22px;
+  border: 1px solid #232020;
+}
+
+#gore .form-row .input-group input[type=text] {
+  background-color: #232020;
+  color: #ff7315;
+  border: 1px solid #232020;
+}
+
+#gore .form-row .custom-select {
+  background-color: #232020;
+  border: 1px solid #232020;
+  color: #ff7315;
 }
 
 .f-size-23 {

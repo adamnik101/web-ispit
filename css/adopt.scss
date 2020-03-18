@@ -57,11 +57,22 @@ body{
             .input-group-prepend{
                 .input-group-text{
                 width: 45px;
-                color: $gray;
-                background-color: $orange;
+                color: $orange;
+                background-color: $gray-dark;
                 font-size: 22px;
+                border: 1px solid $gray-dark;
                 }
             }
+            input[type=text]{
+                background-color: $gray-dark;
+                color: $orange;
+                border: 1px solid $gray-dark;
+            }
+        }
+        .custom-select{
+            background-color: $gray-dark;
+            border: 1px solid $gray-dark;
+            color: $orange;
         }
     }
 }
