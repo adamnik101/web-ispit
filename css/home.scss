@@ -24,13 +24,7 @@ $gray-dark:#232020;
     transition: top 0.4s;
     z-index: 50;
 }
-#kartica{
-    border: none;
-    color:$orange;
-    &:hover{
-        color:$gray-dark;
-    }
-}
+
 // Animation from top
 @keyframes slide-in-top {
     0% {
@@ -147,7 +141,35 @@ $gray-dark:#232020;
     color: $gray-dark;
     }
 .card{
-    width:250px;
+        width: 250px;
+        border: none;
+        .card-img-top{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        .card-body{
+            background-color: #f4f4f4;
+        }
+        .card-footer{
+            border-radius: 0px;
+            border-bottom: 3px solid $orange;
+            background-color: $gray-dark;
+            .btn{
+                color: $gray-dark;
+                background-color: $orange;
+                border: 0px;
+            }
+        }
+    }
+#kartica{
+    border: none;
+    color:$orange;
+    &:hover{
+         color:$gray-dark;
+    }
+    .card-body{
+        background-color: #fff;
+    }
 }
 @media (max-width: 575.98px) { 
     h1{

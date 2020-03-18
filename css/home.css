@@ -28,15 +28,6 @@
   z-index: 50;
 }
 
-#kartica {
-  border: none;
-  color: #ff7315;
-}
-
-#kartica:hover {
-  color: #232020;
-}
-
 @-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -194,6 +185,41 @@
 
 .card {
   width: 250px;
+  border: none;
+}
+
+.card .card-img-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.card .card-body {
+  background-color: #f4f4f4;
+}
+
+.card .card-footer {
+  border-radius: 0px;
+  border-bottom: 3px solid #ff7315;
+  background-color: #232020;
+}
+
+.card .card-footer .btn {
+  color: #232020;
+  background-color: #ff7315;
+  border: 0px;
+}
+
+#kartica {
+  border: none;
+  color: #ff7315;
+}
+
+#kartica:hover {
+  color: #232020;
+}
+
+#kartica .card-body {
+  background-color: #fff;
 }
 
 @media (max-width: 575.98px) {

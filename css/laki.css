@@ -1,0 +1,71 @@
+body {
+  padding-top: 69px;
+}
+
+#nav {
+  background-color: #232020;
+}
+
+#nav .navbar .navbar-brand {
+  color: #ff7315;
+  font-size: 29px;
+}
+
+#nav .nav-item a {
+  border-right: 3px solid transparent;
+  color: #ff7315;
+}
+
+#nav .nav-item a:hover {
+  color: #f4f4f4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-right: 3px solid #ff7315;
+}
+
+#nav .form-inline button {
+  color: #ff7315;
+  border: 1px solid #ff7315;
+}
+
+#nav .form-inline button:hover {
+  background-color: #ff7315;
+  color: #232020;
+}
+
+#gore #bread {
+  background-color: #232020;
+}
+
+#gore #bread ol {
+  background-color: #232020;
+}
+
+#gore #bread ol li a {
+  color: #ff7315;
+}
+
+#gore .form-row .input-group .input-group-prepend .input-group-text {
+  width: 45px;
+  color: #ff7315;
+  background-color: #232020;
+  font-size: 22px;
+  border: 1px solid #232020;
+}
+
+#gore .form-row .input-group input[type=text] {
+  background-color: #232020;
+  color: #ff7315;
+  border: 1px solid #232020;
+}
+
+#gore .form-row .custom-select {
+  background-color: #232020;
+  border: 1px solid #232020;
+  color: #ff7315;
+}
+
+.f-size-23 {
+  font-size: 23px;
+}
+/*# sourceMappingURL=laki.css.map */
