@@ -91,6 +91,12 @@ body {
   background-color: #232020;
 }
 
+.card .card-footer .btn {
+  color: #232020;
+  background-color: #ff7315;
+  border: 0px;
+}
+
 .f-size-23 {
   font-size: 23px;
 }

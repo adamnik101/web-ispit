@@ -89,6 +89,11 @@ body{
         border-radius: 0px;
         border-bottom: 3px solid $orange;
         background-color: $gray-dark;
+        .btn{
+            color: $gray-dark;
+            background-color: $orange;
+            border: 0px;
+        }
     }
 }
 .f-size-23{
