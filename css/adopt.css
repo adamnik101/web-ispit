@@ -97,6 +97,30 @@ body {
   border: 0px;
 }
 
+.pagination .page-item .page-link {
+  color: #ff7315;
+  background-color: #232020;
+  border: 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pagination .page-item .page-link:hover {
+  color: #232020;
+  background-color: #ff7315;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pagination .active .page-link {
+  background-color: #ff7315;
+  color: #232020;
+}
+
+.pagination .disabled .page-link {
+  background-color: #3a3535;
+}
+
 .f-size-23 {
   font-size: 23px;
 }

@@ -96,6 +96,32 @@ body{
         }
     }
 }
+.pagination{
+    .page-item{
+        .page-link{
+            color: $orange;
+            background-color: $gray-dark;
+            border: 0px;
+            transition: 0.4s;
+            &:hover{
+                color: $gray-dark;
+                background-color: $orange;
+                transition: 0.4s;
+            }
+        }
+    }
+    .active{
+        .page-link{
+        background-color: $orange;
+        color: $gray-dark;
+        }
+    }
+    .disabled{
+        .page-link{
+            background-color: $gray;
+        }
+    }
+}
 .f-size-23{
     font-size:23px;
 }
