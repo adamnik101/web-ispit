@@ -14,6 +14,53 @@
     <title>Adopt Laki</title>
 </head>
 <body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Inquiry form for adoption</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="action.php" method="GET">
+            <div class="form-row">
+                <div class="col-12 col-sm-6 ">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-row mt-2">
+                  <div class="col">
+                      <input type="text" class="form-control" placeholder="E-mail">
+                  </div>
+              </div>
+              <div class="form-row mt-2">
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Phone number">
+                </div>
+                <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+                    <input type="text" class="form-control" placeholder="Postal code">
+                </div>
+            </div>
+            <div class="form-row mt-2">
+                <div class="col">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ask more about Laki"></textarea>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Adopt now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container-fluid fixed-top" id="nav">
         <div class="row">
             <div class="col-12">
@@ -77,6 +124,7 @@
                 <p>Medium</p>
                 <p class="font-weight-bold text-uppercase">Location</p>
                 <p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Adopt me!</button>
             </div>
         </div>
         <div class="row m-3 p-3 stats">
@@ -153,7 +201,11 @@
         </div>
     </div>
 
-
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
