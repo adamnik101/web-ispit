@@ -202,13 +202,14 @@ $gray-dark:#232020;
     }
   }
 .search{
-    background-color: $orange;
+    background-color: #f4f4f4;
+    border-bottom: 5px solid $gray-dark;
 }
 .roundT{
     border-radius: 15px 15px 0px 0px;
-}
-.roundD{
-    border-radius: 0px 0px 15px 15px;
+    background-color: $gray-dark;
+    color:$orange;
+    border-bottom: 5px solid $orange;
 }
 #footer{
     background-color: $gray-dark;

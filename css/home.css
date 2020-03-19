@@ -250,15 +250,15 @@
 }
 
 .search {
-  background-color: #ff7315;
+  background-color: #f4f4f4;
+  border-bottom: 5px solid #232020;
 }
 
 .roundT {
   border-radius: 15px 15px 0px 0px;
-}
-
-.roundD {
-  border-radius: 0px 0px 15px 15px;
+  background-color: #232020;
+  color: #ff7315;
+  border-bottom: 5px solid #ff7315;
 }
 
 #footer {
