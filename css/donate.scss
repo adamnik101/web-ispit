@@ -6,25 +6,6 @@ body{
     padding-top: 69px;
     background-color: #f4f4f4;
 }
-.modal{
-    .modal-header{
-        background-color: $gray-dark;
-        color: $orange;
-        button[type=button]{
-            color: $orange;
-
-        }
-        .close{
-            text-shadow: 0px 0px 0px;
-        }
-    }
-    .modal-body{
-        background-color: #f4f4f4;
-    }
-    .modal-footer{
-        background-color: $orange;
-    }
-}
 #nav{
     background-color: $gray-dark;
     .navbar{
@@ -91,6 +72,11 @@ body{
         }
     }
 }
+.payment{
+    background-color: $gray-dark;
+    color:$orange;
+    border-bottom: 5px solid $orange;
+}
 .f-size-20{
     font-size: 20px;
 }
@@ -99,16 +85,6 @@ body{
 }
 .f-size-35{
     font-size: 35px;
-}
-.stats{
-    background-color: $gray-dark;
-    color: $orange;
-    p{
-        font-size: 16px;
-    }
-    i{
-        font-size: 25px;
-    }
 }
 #footer{
     background-color: $gray-dark;

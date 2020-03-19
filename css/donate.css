@@ -3,27 +3,6 @@ body {
   background-color: #f4f4f4;
 }
 
-.modal .modal-header {
-  background-color: #232020;
-  color: #ff7315;
-}
-
-.modal .modal-header button[type=button] {
-  color: #ff7315;
-}
-
-.modal .modal-header .close {
-  text-shadow: 0px 0px 0px;
-}
-
-.modal .modal-body {
-  background-color: #f4f4f4;
-}
-
-.modal .modal-footer {
-  background-color: #ff7315;
-}
-
 #nav {
   background-color: #232020;
 }
@@ -87,6 +66,12 @@ body {
   color: #ff7315;
 }
 
+.payment {
+  background-color: #232020;
+  color: #ff7315;
+  border-bottom: 5px solid #ff7315;
+}
+
 .f-size-20 {
   font-size: 20px;
 }
@@ -97,19 +82,6 @@ body {
 
 .f-size-35 {
   font-size: 35px;
-}
-
-.stats {
-  background-color: #232020;
-  color: #ff7315;
-}
-
-.stats p {
-  font-size: 16px;
-}
-
-.stats i {
-  font-size: 25px;
 }
 
 #footer {
@@ -139,4 +111,4 @@ body {
 .fab:hover {
   color: #ff7315;
 }
-/*# sourceMappingURL=laki.css.map */
+/*# sourceMappingURL=donate.css.map */
