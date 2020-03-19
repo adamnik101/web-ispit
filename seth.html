@@ -7,11 +7,11 @@
     <!-- Web icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/seth.css"/>
+    <link rel="stylesheet" type="text/css" href="css/laki.css"/>
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Adopt Laki</title>
+    <title>Adopt Seth</title>
 </head>
 <body>
     <!-- Modal -->
@@ -25,18 +25,18 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="action.php" method="GET">
+          <form action="action.php" method="GET" id="adoptionForm">
             <div class="form-row">
                 <div class="col-12 col-sm-6 ">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" class="form-control" placeholder="First name" required>
                 </div>
                 <div class="col-12 col-sm-6 mt-2 mt-sm-0">
-                  <input type="text" class="form-control" placeholder="Last name">
+                  <input type="text" class="form-control" placeholder="Last name" required>
                 </div>
               </div>
               <div class="form-row mt-2">
                   <div class="col">
-                      <input type="text" class="form-control" placeholder="E-mail">
+                      <input type="text" class="form-control" placeholder="E-mail" required>
                   </div>
               </div>
               <div class="form-row mt-2">
@@ -56,7 +56,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-dark">Adopt now!</button>
+          <button type="submit" form="adoptionForm" class="btn btn-dark">Adopt now!</button>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@
         </div>
         <div class="row m-1">
             <div class="col-md-5 col-lg-4">
-                <h2>Seth <span class="text-muted f-size-20">(German sheperd)</span></h2>
+                <h2>Seth <span class="text-muted f-size-20">(German shepherd)</span></h2>
                 <p>Puppy &bull; Male &bull; Small</p>
                 <img src="img/laki22.jpg" class="img-fluid" alt="dog">
             </div>
@@ -123,7 +123,7 @@
                 <p class="font-weight-bold text-uppercase">Coat length</p>
                 <p>Medium</p>
                 <p class="font-weight-bold text-uppercase">Location</p>
-                <p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Adopt me!</button>
             </div>
         </div>
