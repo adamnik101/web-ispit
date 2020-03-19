@@ -1,0 +1,134 @@
+$orange:#ff7315;
+$gray:#3a3535;
+$gray-dark:#232020;
+
+body{
+    padding-top: 69px;
+}
+.modal{
+    .modal-header{
+        background-color: $gray-dark;
+        color: $orange;
+        button[type=button]{
+            color: $orange;
+
+        }
+        .close{
+            text-shadow: 0px 0px 0px;
+        }
+    }
+    .modal-body{
+        background-color: #f4f4f4;
+    }
+    .modal-footer{
+        background-color: $orange;
+    }
+}
+#nav{
+    background-color: $gray-dark;
+    .navbar{
+        .navbar-brand{
+            color: $orange;
+            font-size: 29px;
+        }
+    }
+    .nav-item{
+        a{
+            border-right: 3px solid transparent;
+            color: $orange;
+            &:hover{
+                color: #f4f4f4;
+                transition: 0.3s;
+                border-right: 3px solid $orange;
+            }
+        }
+    }
+    .form-inline{
+        button{
+            color: $orange;
+            border: 1px solid $orange;
+            &:hover{
+                background-color: $orange;
+                color: $gray-dark;
+            }
+        }
+    }
+}
+#gore{
+    #bread{
+        background-color: $gray-dark;
+        ol{
+        background-color: $gray-dark;
+            li{
+                a{
+                    color: $orange;
+                }
+            }
+        }
+    }
+    .form-row{
+        .input-group{
+            .input-group-prepend{
+                .input-group-text{
+                width: 45px;
+                color: $orange;
+                background-color: $gray-dark;
+                font-size: 22px;
+                border: 1px solid $gray-dark;
+                }
+            }
+            input[type=text]{
+                background-color: $gray-dark;
+                color: $orange;
+                border: 1px solid $gray-dark;
+            }
+        }
+        .custom-select{
+            background-color: $gray-dark;
+            border: 1px solid $gray-dark;
+            color: $orange;
+        }
+    }
+}
+.f-size-20{
+    font-size: 20px;
+}
+.f-size-23{
+    font-size:23px;
+}
+.f-size-35{
+    font-size: 35px;
+}
+.stats{
+    background-color: $gray-dark;
+    color: $orange;
+    p{
+        font-size: 16px;
+    }
+    i{
+        font-size: 25px;
+    }
+}
+#footer{
+    background-color: $gray-dark;
+    p, a{
+        color:$orange;
+    }
+}
+.fa-facebook{
+    color: #4267b2;
+}
+.fa-twitter{
+    color:#1da1f2;
+}
+.fa-youtube{
+    color:#FF0000;
+}
+.fa-pinterest{
+    color:#BD081C;
+}
+.fab{
+    &:hover{
+        color: $orange;
+    }
+}
