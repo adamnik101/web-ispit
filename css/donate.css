@@ -66,10 +66,58 @@ body {
   color: #ff7315;
 }
 
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .payment {
   background-color: #232020;
   color: #ff7315;
   border-bottom: 5px solid #ff7315;
+}
+
+.btn {
+  color: #ff7315;
+  background-color: #232020;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 5px solid #ff7315;
+  font-size: 22px;
+}
+
+.btn:hover {
+  color: #232020;
+  border-bottom: 5px solid #232020;
+  background-color: #ff7315;
 }
 
 .f-size-20 {
@@ -110,5 +158,14 @@ body {
 
 .fab:hover {
   color: #ff7315;
+}
+
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 22px;
+  }
+  #footer #footerLink {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=donate.css.map */

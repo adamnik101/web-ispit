@@ -72,10 +72,39 @@ body{
         }
     }
 }
+.slide-in-left{
+    animation: slide-in-left 0.7s cubic-bezier(0.25, 0.460, 0.450, 0.940) both;
+}
+// Animation from left
+@keyframes slide-in-left{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .payment{
     background-color: $gray-dark;
     color:$orange;
     border-bottom: 5px solid $orange;
+}
+.btn{
+    color: $orange;
+    background-color: $gray-dark;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid $orange;
+    font-size: 22px;
+    &:hover{
+        color: $gray-dark;
+        border-bottom: 5px solid $gray-dark;
+        background-color: $orange;
+    }
 }
 .f-size-20{
     font-size: 20px;
@@ -107,5 +136,15 @@ body{
 .fab{
     &:hover{
         color: $orange;
+    }
+}
+@media (max-width: 575.98px) { 
+    h2{
+        font-size: 22px;
+    }
+    #footer{
+        #footerLink{
+            font-size: 15px;
+        }
     }
 }
