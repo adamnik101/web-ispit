@@ -1,6 +1,22 @@
 body{
     height: 2000px;
 }
-#links .brand-logo{
+.brand-logo{
     font-size: 30px ;
+    font-weight: 600;
 }
+#links i{
+    margin: 0;
+    font-size:18px;
+}
+@media only screen and (max-width : 992px) {
+    .parallax img {
+      max-height: 150%; /* or a little bit higher */
+    }
+  }
+  
+  @media only screen and (min-width: 993px) {
+    .parallax img {
+      max-height:200%; /* or higher percentages. It's up to your taste */
+    }
+  }
