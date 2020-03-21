@@ -1,6 +1,4 @@
-body{
-    height: 2000px;
-}
+
 .brand-logo{
     font-size: 30px ;
     font-weight: 600;
@@ -8,6 +6,28 @@ body{
 #links i{
     margin: 0;
     font-size:18px;
+}
+#links li a{
+    font-size: 16px;
+}
+#links #socials i{
+    font-size: 25px;
+}
+#gorelinks li a{
+    font-size: 18px;
+    font-weight: 400;
+}
+#hamburger{
+    font-size: 37px;
+}
+.daily{
+    font-weight: 700;
+}
+#border{
+    border-top: 5px solid rgb(206, 108, 28);
+}
+#margin{
+    margin: 0;
 }
 @media only screen and (max-width : 992px) {
     .parallax img {
