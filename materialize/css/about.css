@@ -23,11 +23,25 @@
 .daily{
     font-weight: 700;
 }
-#border{
+#footer{
     border-top: 5px solid rgb(206, 108, 28);
 }
 #margin{
     margin: 0;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+.center a{
+    display: inline-block;
+    margin:7px
+}
+.center a:hover{
+    color: rgb(189, 131, 25) !important;
+}
+.center i{
+    font-size: 20px;
 }
 @media only screen and (max-width : 992px) {
     .parallax img {
