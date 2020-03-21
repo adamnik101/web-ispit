@@ -91,7 +91,8 @@ body{
     color:$orange;
     border-bottom: 5px solid $orange;
 }
-.btn{
+#dug{
+    .btn{
     color: $orange;
     background-color: $gray-dark;
     border-radius: 0px;
@@ -105,6 +106,7 @@ body{
         border-bottom: 5px solid $gray-dark;
         background-color: $orange;
     }
+}
 }
 .f-size-20{
     font-size: 20px;

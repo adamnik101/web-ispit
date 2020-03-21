@@ -103,7 +103,7 @@ body {
   border-bottom: 5px solid #ff7315;
 }
 
-.btn {
+#dug .btn {
   color: #ff7315;
   background-color: #232020;
   border-radius: 0px;
@@ -114,7 +114,7 @@ body {
   font-size: 22px;
 }
 
-.btn:hover {
+#dug .btn:hover {
   color: #232020;
   border-bottom: 5px solid #232020;
   background-color: #ff7315;
