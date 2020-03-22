@@ -7,9 +7,9 @@
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="css/materialize.min.css">
         <!--Let browser know website is optimized for mobile-->
-        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/donate.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>About us - Dogfinder.</title>
+        <title>Donate - Dogfinder.</title>
     </head>
    <body>
        <div class="navbar-fixed">
@@ -31,8 +31,8 @@
                 <ul>
                     <li><a href="../index.html" class="orange-text text-darken-3"><i class="fas fa-home orange-text text-darken-3"></i>Homepage</a></li>
                     <li><a href="../adopt.html" class="orange-text text-darken-3"><i class="fas fa-dog orange-text text-darken-3"></i>Adopt a Dog</a></li>
-                    <li><a href="../donate.html" class="orange-text text-darken-3"><i class="fas fa-donate orange-text text-darken-3"></i>Donate</a></li>
-                    <li><a href="about.html" class="orange-text text-darken-3"><i class="fas fa-address-book orange-text text-darken-3"></i>About us</a></li>
+                    <li><a href="donate.html" class="orange-text text-darken-3"><i class="fas fa-donate orange-text text-darken-3"></i>Donate</a></li>
+                    <li><a href="../about.html" class="orange-text text-darken-3"><i class="fas fa-address-book orange-text text-darken-3"></i>About us</a></li>
                 </ul>
                 <div class="container">
                 <div class="row" id="socials">
@@ -46,42 +46,75 @@
                     </div>
                 </div>
                 </div>
-        </div>
-          <div class="parallax-container">
-            <div class="parallax"><img src="img/ret.jpg" alt="dog"></div>
-          </div>
-          <div class="section grey darken-4">
-            <div class="row container">
-              <h2 class="header orange-text text-darken-3">About us</h2>
-              <p class="orange-text text-darken-3">Dogfinder is an online, searchable database of animals who need homes. It is also a directory of nearly 8,000 animal shelters and adoption organizations across the United States. Organizations maintain their own home pages and available-dog databases.</p>
-              <h5 class="header orange-text text-darken-3">Our Mission</h5>
-              <p class="header orange-text text-darken-3">To use Internet technology and the resources it can generate to:</p>
-              <ol>
-                  <li class="orange-text text-darken-3">Increase public awareness of the availability of high-quality adoptable dogs</li>
-                  <li class="orange-text text-darken-3">Increase the overall effectiveness of dog adoption programs across United States</li>
-                  <li class="orange-text text-darken-3">Elevate the status of dogs to that of family member</li>
-              </ol>
-              <p class="orange-text text-darken-3">From the comfort of their personal computers, dog lovers can search for a dog that best matches their needs.</p>
-              <p class="orange-text text-darken-3">Dogfinder is updated <span class="daily"> DAILY.</span></p>
             </div>
-          </div>
-          <div class="parallax-container">
-            <div class="parallax"><img src="img/paral.jpg" alt="dog"></div>
-          </div>
-          <div class="section grey darken-4">
-              <div class="container">
-                  <div class="row">
-                      <div class="col">
-                        <h2 class="orange-text text-darken-3">Disclaimer</h2>
-                        <p class="orange-text text-darken-3">Dogfinder is only a directory of homeless dog and dog adoption organizations. No information in Dogfinder is guaranteed. Although the information on Dogfinder is updated frequently, it is always best to call the facility or organization that lists the dog to insure it is still available and to insure the information listed in Dogfinder is accurate. It is crucial that any dog found through an adoption service be thoroughly examined by a veterinarian immediately upon adoption. Any dog found, adopted through, or listed in Dogfinder are the sole responsibility of the adoption organizations and/or the adopting party.</p>
-                        <p class="orange-text text-darken-3">Dogfinder accepts no responsiblity for any liability or for any injury or damages to any person or property caused by any listed dog, as well as any cause of action, claims, suits or demands whatsoever that may arise as a result of such injury or damage.</p>
+            <div class="full-width">
+                    <div class="row">
+                        <div class="col s12 m12 l6 height" id="back">
+                            
+        
+                        </div>
+                        <div class="col s12 m12 l6 fomr grey darken-4 height" id="sm-height">
+                            <h2 class="orange-text text-darken-3">Donate to help!</h2>
+                            <form action="action.php" method="GET">
+                                    <div class="input-field col s12 m6">
+                                      <i class="material-icons prefix">person</i>
+                                      <input id="first_name" type="text" class="validate" required>
+                                      <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">person_outline</i>
+                                      <input id="last_name" type="text" class="validate" required>
+                                      <label for="last_name">Last Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">location_on</i>
+                                        <input id="address" type="text" required>
+                                        <label for="address">Your Address</label>
+                                      </div>
+                                      <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email" class="validate" required>
+                                        <label for="email">Your E-mail</label>
+                                      </div>
+                                      <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="tel" type="tel" required>
+                                        <label for="tel">Phone number</label>
+                                      </div>
+                                      <div class="input-field col s12 m6">
+                                          <i class="material-icons prefix">location_city</i>
+                                        <input id="state" type="text" required>
+                                        <label for="state">Your State</label>
+                                      </div>
+                                      <div class="input-field col s12 m6">
+                                          <i class="material-icons prefix">credit_card</i>
+                                        <input id="card" type="text" required>
+                                        <label for="card">Credit Card Number</label>
+                                      </div>
+                                      <div class="input-field col s12 m6">  
+                                        <i class="material-icons prefix">attach_money</i>
+                                      <input id="amount" type="number" required min="5">
+                                      <label for="amount">Your Amount</label>
+                                    </div>
+                                    <p class="move">
+                                    <label>
+                                        <input name="payment" type="radio">
+                                        <span>Credit Card</span>
+                                    </label>
+                                    </p>
+                                    <p class="move">
+                                    <label>
+                                        <input name="payment" type="radio">
+                                        <span>PayPal</span>
+                                    </label>
+                                    </p>
+                                    <button class="btn waves-effect waves-light move" type="submit" name="action">Submit
+                                        <i class="material-icons">send</i>
+                                      </button>
+                                </form>
+                        </div>
                     </div>
-                  </div>
-              </div>
-          </div>
-          <div class="parallax-container">
-            <div class="parallax"><img src="img/back.jpg" alt="dog"></div>
-          </div>
+            </div>
           <div class="full-width grey darken-4" id="footer">
               <div class="container">
                   <div class="row" id="margin">
@@ -115,8 +148,9 @@
          $(document).ready(function(){
         $('.sidenav').sidenav();
         });
-        $(document).ready(function(){
-    $('.parallax').parallax();
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
   });
       </script>
     </body>

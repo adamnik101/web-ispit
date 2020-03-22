@@ -1,0 +1,172 @@
+
+.brand-logo{
+    font-size: 30px ;
+    font-weight: 600;
+}
+#links i{
+    margin: 0;
+    font-size:18px;
+}
+#links li a{
+    font-size: 16px;
+}
+#links #socials i{
+    font-size: 25px;
+}
+#gorelinks li a{
+    font-size: 18px;
+    font-weight: 400;
+}
+#hamburger{
+    font-size: 37px;
+}
+#back{
+    background-image: url('../img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(49, 49, 49);
+}
+.height{
+    height: 700px;
+}
+.fomr{
+    padding: 40px !important;
+    box-shadow: inset 0px 0px 20px 20px rgb(20, 20, 20);
+}
+.row{
+    margin: 0;
+}
+.move{
+    margin-left:13px;
+}
+.btn{
+    font-size: 20px;
+    width: 100%;
+    margin:20px;
+    height: 50px;
+    line-height: 50px;
+}
+.fomr .input-field input[type=text]{
+    color: rgb(255, 115, 0);
+}
+.fomr .input-field input[type=tel]{
+    color: rgb(255, 115, 0);
+}
+.fomr .input-field input[type=email]{
+    color: rgb(255, 115, 0);
+}
+.fomr .input-field input[type=number]{
+    color: rgb(255, 115, 0);
+}
+ /* label color */
+ .fomr .input-field label {
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* label focus color */
+ .fomr .input-field input[type=text]:focus + label {
+    color: rgb(255, 115, 0);
+  }
+  /* label underline focus color */
+ .fomr .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(255, 115, 0);
+    box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+  }
+
+  .fomr .input-field input[type=email]:focus {
+    border-bottom: 1px solid rgb(255, 115, 0);
+    box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+  }
+  .fomr .input-field input[type=email]:focus + label {
+    color: rgb(255, 115, 0);
+  }
+  .fomr .input-field input[type=tel]:focus {
+    border-bottom: 1px solid rgb(255, 115, 0);
+    box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+  }
+  .fomr .input-field input[type=tel]:focus + label {
+    color: rgb(255, 115, 0);
+  }
+  .fomr .input-field input[type=number]:focus {
+    border-bottom: 1px solid rgb(255, 115, 0);
+    box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+  }
+  .fomr .input-field input[type=number]:focus + label {
+    color: rgb(255, 115, 0);
+  }
+  /* valid color */
+ .fomr .input-field input[type=text].valid {
+    border-bottom: 1px solid rgb(92, 92, 92);
+    box-shadow: 0 1px 0 0 rgb(92, 92, 92);
+  }
+  .fomr .input-field .prefix{
+      color: rgb(97, 97, 97);
+  }
+  /* icon prefix focus color */
+ .fomr .input-field .prefix.active {
+    color: rgb(255, 115, 0);
+  }
+  .fomr .move input[type=radio]:checked + :after{
+      background-color: rgb(255, 115, 0);
+      border: rgb(255, 115, 0);
+  }
+  .fomr .btn{
+      background-color: rgb(255, 115, 0);
+      color: rgb(49, 49, 49);
+      font-weight: 600;
+  }
+#footer{
+    border-top: 5px solid rgb(206, 108, 28);
+}
+#margin{
+    display: flex;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+.center a{
+    display: inline-block;
+    margin:7px
+}
+.center a:hover{
+    color: rgb(189, 131, 25) !important;
+}
+.center i{
+    font-size: 20px;
+}
+@media only screen and (max-width:600px){
+    .fomr h2{
+        font-size: 27px;
+        font-weight: 500;
+    }
+    #sm-height{
+        height: auto;
+    }
+    .move{
+        margin-left:0px;
+    }
+    #margin{
+        flex-direction: column;
+    }
+    #margin #_1{
+      order: 1;
+    }
+    #margin #_2{
+        order: 2;
+    }
+    #margin #_3{
+        order: 3;
+    }
+    .center{
+        text-align: left;
+    }
+    #footer{
+        background-image: url('../img/png.png');
+        background-position: 95% 94%;
+        background-size: 220px;
+        background-repeat: no-repeat;
+    }
+}
