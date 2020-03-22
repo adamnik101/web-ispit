@@ -28,6 +28,7 @@
 }
 #margin{
     margin: 0;
+    display: flex;
 }
 .center{
     width: 100%;
@@ -45,23 +46,35 @@
 }
 @media only screen and (max-width : 992px) {
     .parallax img {
-      max-height: 150%; /* or a little bit higher */
+      max-height: 150%;
     }
   }
   
   @media only screen and (min-width: 993px) {
     .parallax img {
-      max-height:200%; /* or higher percentages. It's up to your taste */
+      max-height:200%; 
     }
   }
-  @media only screen and (max-width:609px){
+  @media only screen and (max-width:600px){
+      #margin{
+          flex-direction: column;
+      }
+      #margin #_1{
+        order: 1;
+      }
+      #margin #_2{
+          order: 2;
+      }
+      #margin #_3{
+          order: 3;
+      }
       .center{
           text-align: left;
       }
       #footer{
           background-image: url('../img/png.png');
-          background-position: bottom right;
-          background-size: 250px;
+          background-position: 95% 94%;
+          background-size: 220px;
           background-repeat: no-repeat;
       }
   }
