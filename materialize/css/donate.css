@@ -21,7 +21,7 @@
     font-size: 37px;
 }
 #back{
-    background-image: url('../img/back.jpg');
+    background-image: url('../img/paral.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,11 +96,6 @@
   .fomr .input-field input[type=number]:focus + label {
     color: rgb(255, 115, 0);
   }
-  /* valid color */
- .fomr .input-field input[type=text].valid {
-    border-bottom: 1px solid rgb(92, 92, 92);
-    box-shadow: 0 1px 0 0 rgb(92, 92, 92);
-  }
   .fomr .input-field .prefix{
       color: rgb(97, 97, 97);
   }
@@ -138,6 +133,9 @@
     font-size: 20px;
 }
 @media only screen and (max-width:600px){
+    #back{
+        background-size: 300%;
+    }
     .fomr h2{
         font-size: 27px;
         font-weight: 500;
@@ -165,8 +163,8 @@
     }
     #footer{
         background-image: url('../img/png.png');
-        background-position: 95% 94%;
-        background-size: 220px;
+        background-position: 95% 84%;
+        background-size: 150px;
         background-repeat: no-repeat;
     }
 }
