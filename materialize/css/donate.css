@@ -133,6 +133,9 @@
     font-size: 20px;
 }
 @media only screen and (max-width:600px){
+    #back{
+        height: 350px;
+    }
     .fomr h2{
         font-size: 34px;
         font-weight: 500;
