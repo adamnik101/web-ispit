@@ -39,7 +39,7 @@
     margin:7px
 }
 .center a:hover{
-    color: rgb(189, 131, 25) !important;
+    text-decoration: underline;
 }
 .center i{
     font-size: 20px;

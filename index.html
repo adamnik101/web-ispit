@@ -11,9 +11,15 @@
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Dogfinder.</title>
+    <title>Dogfinder. | Homepage</title>
+    <!-- Meta tags  -->
+    <meta name="author" content="Adam Nikolić">
+    <meta name="language" content="en">
+    <meta name="keywords" content="dog, dogs, dogfinder, adopt, adoption">
+    <meta name="description" content="Dogfinder is a dog adoption website where you can choose from over 15,000+ dogs! Start your search now!">
 </head>
 <body>
+  <!-- FIXED NAVIGATION FOR MOBILE  -->
     <div class="container-fluid fixed-top d-md-none" id="smallResNav">
     <div class="row">
         <div class="col-12">
@@ -32,7 +38,7 @@
                   <a class="nav-link" href="adopt.html"><i class="fas fa-dog f-size-23"></i> Adopt a dog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="donate.html"><i class="fas fa-donate f-size-23"></i> Donate</a>
+                    <a class="nav-link" href="materialize/donate.html"><i class="fas fa-donate f-size-23"></i> Donate</a>
                   </li>
                 <li class="nav-item">
                   <a class="nav-link" href="materialize/about.html"><i class="fas fa-address-book f-size-23"></i> About us</a>
@@ -47,6 +53,7 @@
           </div>
     </div>
 </div>
+    <!-- NAVIGATION HIDES ON SMALLER THAN MEDIUM -->
     <div class="container-fluid d-none d-md-block" id="hideNav">
         <div class="row">
             <div class="col-12">
@@ -80,7 +87,9 @@
               </div>
         </div>
     </div>
+    <!-- NAVBAR + CAROUSEL -->
     <div class="container-fluid">
+      <!-- HIDES ON SMALLER  -->
         <div class="row">
             <div class="col-xl-4 col-lg-3 p-0 d-none d-md-block" id="menuLogo">
                 <a href="#"><img src="img/logo.png" class="mx-auto d-block slide-in-top" alt="logo"></a>
@@ -96,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- SOCIALS -->
                 <div class="container d-none d-lg-block">
                     <div class="row">
                         <div class="col-12">
@@ -108,6 +118,7 @@
                     </div>
                 </div>
             </div>
+            <!-- CAROUSEL -->
             <div class="col-xl-8 col-lg-9 col-md-12 p-0" id="slajder">
                 <div id="carouselExampleCaptions" class="carousel slide mr-0 " data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -149,7 +160,8 @@
                   </div>
             </div>
         </div>
-    </div>
+      </div>
+      <!-- Naslov -->
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -157,6 +169,7 @@
             </div>
         </div>
     </div>
+    <!-- FIRST ROW MAIN SECTION  -->
     <div class="container mb-3" id="mainSection">
         <div class="row">
             <div class="col-md-4 col-xl text-center">
@@ -182,6 +195,7 @@
             </div>
         </div>
     </div>
+    <!-- SEARCH FOR A DOG SECTION  -->
     <div class="container roundT p-3">
         <div class="row">
             <div class="col text-center pt-1">
@@ -189,6 +203,7 @@
             </div>
         </div>
     </div>
+    <!-- SEARCH FORM  -->
     <div class="container search p-3 mb-5" id="search">
         <form>
                 <div class="form-row align-items-center justify-content-around">
@@ -235,6 +250,7 @@
                 </div>
         </form>
     </div>
+    <!-- FEATURED DOGS SECTION  -->
     <div class="container-fluid">
       <div class="row">
         <div class="col">
@@ -290,7 +306,7 @@
       </div>
       </div>
     </div>
-
+    <!-- FOOTER  -->
     <div class="container-fluid" id="footer">
       <div class="container">
           <div class="row" id="margin">
@@ -347,8 +363,8 @@
 
 
     <script>
+    // SHOWS AFTER SCROLLING DOWN 500px 
         window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById("hideNav").style.top = "0";
@@ -356,6 +372,7 @@ function scrollFunction() {
     document.getElementById("hideNav").style.top = "-500px";
   }
 }
+    // MODAL jQuery 
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
