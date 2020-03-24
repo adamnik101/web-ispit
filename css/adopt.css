@@ -125,26 +125,6 @@ body {
   font-size: 23px;
 }
 
-.fa-facebook {
-  color: #4267b2;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
-
-.fa-youtube {
-  color: #FF0000;
-}
-
-.fa-pinterest {
-  color: #BD081C;
-}
-
-.fab:hover {
-  color: #ff7315;
-}
-
 .f-size-20 {
   font-size: 20px;
 }
@@ -155,15 +135,48 @@ body {
 
 #footer {
   background-color: #232020;
+  border-top: 5px solid #ff7315;
 }
 
-#footer p, #footer a {
+#footer p, #footer a, #footer h4 {
   color: #ff7315;
 }
 
-@media (max-width: 575.98px) {
+#footer .fab {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 575.98px) {
   h2 {
     font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #margin #_2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #margin #_3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #footer {
+    background-image: url("../img/png.png");
+    background-position: 98% 82%;
+    background-size: 150px;
+    background-repeat: no-repeat;
   }
 }
 /*# sourceMappingURL=adopt.css.map */

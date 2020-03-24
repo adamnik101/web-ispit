@@ -1,6 +1,8 @@
 $orange:#ff7315;
 $gray:#3a3535;
 $gray-dark:#232020;
+$white: #f4f4f4;
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +11,7 @@ $gray-dark:#232020;
 #hideNav{
     a{
         &:hover{
-            color: #f4f4f4;
+            color: $white;
         }
     }
 }
@@ -60,6 +62,26 @@ $gray-dark:#232020;
         }
     }
 }
+#menuLogo{
+    .fa-facebook{
+        color: #4267b2;
+        &:hover{
+            color: $orange;
+        }
+    }
+    .fa-github{
+        color: #3a3535;
+        &:hover{
+            color: $orange;
+        }
+    }
+    .fa-twitter{
+        color:#1da1f2;
+        &:hover{
+        color: $orange !important;
+    }
+    }
+}
 #smallResNav{
     background-color: $gray-dark;
 }
@@ -76,7 +98,7 @@ $gray-dark:#232020;
             border-right: 3px solid transparent;
             color: $orange;
             &:hover{
-                color: #f4f4f4;
+                color: $white;
                 transition: 0.3s;
                 border-right: 3px solid $orange;
             }
@@ -105,29 +127,9 @@ $gray-dark:#232020;
 .f-size-80{
     font-size: 80px;
 }
-.fa-facebook{
-    color: #4267b2;
-}
-.fa-twitter{
-    color:#1da1f2;
-}
-.fa-github{
-    color:#333;
-}
-.fa-youtube{
-    color:#FF0000;
-}
-.fa-pinterest{
-    color:#BD081C;
-}
 #mainSection{
     .fa-search, .fa-paw, .fa-home{
         color:$orange;
-    }
-}
-.fab{
-    &:hover{
-        color: $orange;
     }
 }
 .carousel-item{
@@ -147,7 +149,7 @@ $gray-dark:#232020;
             border-top-right-radius: 0px;
         }
         .card-body{
-            background-color: #f4f4f4;
+            background-color: $white;
         }
         .card-footer{
             border-radius: 0px;
@@ -168,6 +170,12 @@ $gray-dark:#232020;
     }
     .card-body{
         background-color: #fff;
+    }
+}
+#footer{
+    border-top: 5px solid $orange;
+    i{
+        font-size: 20px;
     }
 }
 @media (max-width: 575.98px) { 
@@ -191,6 +199,22 @@ $gray-dark:#232020;
     body{
         padding-top: 69px;
     }
+    #margin{
+        display: flex;
+        flex-direction: column;
+    }
+    #margin #_2{
+        order: 2;
+    }
+    #margin #_3{
+        order: 3;
+    }
+    #footer{
+        background-image: url('../img/png.png');
+        background-position: 98% 82%;
+        background-size: 150px;
+        background-repeat: no-repeat;
+    }
 }
 @media (max-width: 991.98px) {
     .carousel-item {
@@ -201,7 +225,7 @@ $gray-dark:#232020;
     }
   }
 .search{
-    background-color: #f4f4f4;
+    background-color: $white;
     border-bottom: 5px solid $gray-dark;
 }
 .roundT{

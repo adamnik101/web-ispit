@@ -1,10 +1,11 @@
 $orange:#ff7315;
 $gray:#3a3535;
 $gray-dark:#232020;
+$white: #f4f4f4;
 
 body{
     padding-top: 69px;
-    background-color: #f4f4f4;
+    background-color: $white;
 }
 .modal{
     .modal-header{
@@ -19,7 +20,7 @@ body{
         }
     }
     .modal-body{
-        background-color: #f4f4f4;
+        background-color: $white;
     }
     .modal-footer{
         background-color: $orange;
@@ -38,7 +39,7 @@ body{
             border-right: 3px solid transparent;
             color: $orange;
             &:hover{
-                color: #f4f4f4;
+                color: $white;
                 transition: 0.3s;
                 border-right: 3px solid $orange;
             }
@@ -112,24 +113,29 @@ body{
 }
 #footer{
     background-color: $gray-dark;
-    p, a{
+    border-top: 5px solid $orange;
+    p, a, h4{
         color:$orange;
+    .fab{
+        font-size: 20px;
+    }
     }
 }
-.fa-facebook{
-    color: #4267b2;
-}
-.fa-twitter{
-    color:#1da1f2;
-}
-.fa-youtube{
-    color:#FF0000;
-}
-.fa-pinterest{
-    color:#BD081C;
-}
-.fab{
-    &:hover{
-        color: $orange;
+@media only screen and (max-width:768px){
+    #margin{
+        display: flex;
+        flex-direction: column;
+    }
+    #margin #_2{
+        order: 2;
+    }
+    #margin #_3{
+        order: 3;
+    }
+    #footer{
+        background-image: url('../img/png.png');
+        background-position: 98% 82%;
+        background-size: 150px;
+        background-repeat: no-repeat;
     }
 }
