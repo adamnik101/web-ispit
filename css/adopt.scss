@@ -73,6 +73,7 @@ body{
 }
 .card{
     border: none;
+    position: relative;
     .card-img-top{
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
@@ -90,6 +91,28 @@ body{
             border: 0px;
         }
     }
+    .floating{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50% 50%;
+        background-color: $gray-dark;
+        color: $orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 900;
+        text-decoration: none;
+        right: 10px;
+        bottom: 165px ;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: $orange;
+            color: $gray-dark;
+            transform: scale(1.2);
+        }
+        }
 }
 .pagination{
     .page-item{

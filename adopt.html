@@ -5,8 +5,10 @@
     <!-- Bootstrap File-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <!-- Web icons -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
-    <!-- CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
+  <!-- 4.7 font awesome for .click effect jquery  -->
+    <script src="https://use.fontawesome.com/7fabce2783.js"></script>
+        <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/adopt.css"/>
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -208,6 +210,7 @@
                 <div class="card-footer">
                   <a href="laki.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
+                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <img src="img/laki22.jpg" class="card-img-top" alt="dog">
@@ -218,6 +221,7 @@
                 <div class="card-footer">
                   <a href="seth.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
+                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <img src="img/laki33.jpg" class="card-img-top" alt="dog">
@@ -228,6 +232,7 @@
                 <div class="card-footer">
                   <a href="elsie.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
+                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <img src="img/pit.jpg" class="card-img-top" alt="dog">
@@ -238,6 +243,7 @@
                 <div class="card-footer">
                   <a href="chonky.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
+                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
         </div>
         <!-- Second row  -->
@@ -251,6 +257,7 @@
             <div class="card-footer">
               <a href="morty.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
+            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
             <img src="img/corgi.jpeg" class="card-img-top" alt="dog">
@@ -261,6 +268,7 @@
             <div class="card-footer">
               <a href="tea.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
+            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1">
             <img src="img/boxer.jpg" class="card-img-top" alt="dog">
@@ -271,6 +279,7 @@
             <div class="card-footer">
               <a href="pickle.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
+            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1">
             <img src="img/rot.jpg" class="card-img-top" alt="dog">
@@ -281,6 +290,7 @@
             <div class="card-footer">
               <a href="rocky.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
+            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
         </div>
         <!-- Pagination  -->
@@ -357,5 +367,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      <script>
+        // CHANGE FA ICONS ON CLICK JQUERY 
+        $(document).ready(function () {
+                $('.fa').click(function () {
+                    $(this).toggleClass('fa-heart-o fa-heart');
+                });
+            });
+            // TOOLTIPS
+            $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+      </script>
+  </body>
 </html>
