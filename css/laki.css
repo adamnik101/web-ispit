@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap");
 body {
   padding-top: 69px;
   background-color: #f4f4f4;
+  font-family: 'Meera Inimai', sans-serif;
 }
 
 .modal .modal-header {

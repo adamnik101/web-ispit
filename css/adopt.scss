@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap');
 $orange:#ff7315;
 $gray:#3a3535;
 $gray-dark:#232020;
@@ -10,6 +11,7 @@ $white: #f4f4f4;
 }
 body{
     padding-top: 69px;
+    font-family: 'Meera Inimai', sans-serif;
 }
 #nav{
     background-color: $gray-dark;
@@ -41,6 +43,21 @@ body{
         }
     }
 }
+.naslov{
+    background-color: $gray-dark;
+    color: $orange;
+    border-bottom: 5px solid $orange;
+    p{
+        color:#797979;
+    }
+    .orange{
+        color: $orange;
+    }
+    .btn{
+        background-color: $orange;
+        color: $gray-dark;
+    }
+}
 #gore{
     #bread{
         background-color: $gray-dark;
@@ -51,29 +68,6 @@ body{
                     color: $orange;
                 }
             }
-        }
-    }
-    .form-row{
-        .input-group{
-            .input-group-prepend{
-                .input-group-text{
-                width: 45px;
-                color: $orange;
-                background-color: $gray-dark;
-                font-size: 22px;
-                border: 1px solid $gray-dark;
-                }
-            }
-            input[type=text]{
-                background-color: $gray-dark;
-                color: $orange;
-                border: 1px solid $gray-dark;
-            }
-        }
-        .custom-select{
-            background-color: $gray-dark;
-            border: 1px solid $gray-dark;
-            color: $orange;
         }
     }
 }

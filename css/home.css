@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Meera Inimai', sans-serif;
 }
 
 #hideNav a:hover {

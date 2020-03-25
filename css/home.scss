@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap');
 $orange:#ff7315;
 $gray:#3a3535;
 $gray-dark:#232020;
@@ -7,6 +8,7 @@ $white: #f4f4f4;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Meera Inimai', sans-serif;
 }
 #hideNav{
     a{

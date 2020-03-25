@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap');
+body{
+    font-family: 'Meera Inimai', sans-serif;
+}
 .brand-logo{
     font-size: 30px ;
     font-weight: 600;
