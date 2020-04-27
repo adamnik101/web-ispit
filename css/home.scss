@@ -106,6 +106,20 @@ $white: #f4f4f4;
             }
         }
     }
+    .social{
+        width:60px;
+        height:60px;
+        background-color: $orange;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $white;
+        font-size: 28px;
+        transition: 0.2s;
+        &:hover{
+            box-shadow: 0px 0px 15px 10px #141414;
+            transition: 0.2s;
+        }
+    }
     .form-inline{
         button{
             color: $orange;
@@ -114,6 +128,12 @@ $white: #f4f4f4;
                 background-color: $orange;
                 color: $gray-dark;
             }
+        }
+    }
+    p{
+        color: #6c757d;
+        a{
+            color: $orange;
         }
     }
 }

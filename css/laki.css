@@ -47,6 +47,25 @@ body {
   border-right: 3px solid #ff7315;
 }
 
+#nav .social {
+  width: 60px;
+  height: 60px;
+  background-color: #ff7315;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 28px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#nav .social:hover {
+  -webkit-box-shadow: 0px 0px 15px 10px #141414;
+          box-shadow: 0px 0px 15px 10px #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 #nav .form-inline button {
   color: #ff7315;
   border: 1px solid #ff7315;
@@ -55,6 +74,14 @@ body {
 #nav .form-inline button:hover {
   background-color: #ff7315;
   color: #232020;
+}
+
+#nav p {
+  color: #6c757d;
+}
+
+#nav p a {
+  color: #ff7315;
 }
 
 #gore #bread {
@@ -87,6 +114,10 @@ body {
   background-color: #232020;
   border: 1px solid #232020;
   color: #ff7315;
+}
+
+.font-size-15 {
+  font-size: 15px;
 }
 
 .f-size-20 {
