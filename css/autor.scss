@@ -1,4 +1,89 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap');
+$orange:#ff7315;
+$gray:#3a3535;
+$gray-dark:#232020;
+$white: #f4f4f4;
+
+body{
+    padding-top: 69px;
+    background-color: $white;
+    font-family: 'Meera Inimai', sans-serif;
+}
+#nav{
+    background-color: $gray-dark;
+    .navbar{
+        .navbar-brand{
+            color: $orange;
+            font-size: 29px;
+        }
+    }
+    .nav-item{
+        a{
+            border-right: 3px solid transparent;
+            color: $orange;
+            &:hover{
+                color: $white;
+                transition: 0.3s;
+                border-right: 3px solid $orange;
+            }
+        }
+    }
+    .social{
+        width:60px;
+        height:60px;
+        background-color: $orange;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $white;
+        font-size: 28px;
+        transition: 0.2s;
+        &:hover{
+            box-shadow: 0px 0px 15px 10px #141414;
+            transition: 0.2s;
+        }
+    }
+    .form-inline{
+        button{
+            color: $orange;
+            border: 1px solid $orange;
+            &:hover{
+                background-color: $orange;
+                color: $gray-dark;
+            }
+        }
+    }
+    p{
+        color: #6c757d;
+        a{
+            color: $orange;
+        }
+    }
+}
+#footer{
+    background-color: $gray-dark;
+    border-top: 5px solid $orange;
+    p, a, h4{
+        color:$orange;
+    .fab{
+        font-size: 20px;
+    }
+    }
+}
+@media only screen and (max-width:768px){
+    #margin{
+        display: flex;
+        flex-direction: column;
+    }
+    #margin #_2{
+        order: 2;
+    }
+    #margin #_3{
+        order: 3;
+    }
+    #footer{
+        background-image: url('../img/png.png');
+        background-position: 98% 82%;
+        background-size: 150px;
+        background-repeat: no-repeat;
+    }
 }

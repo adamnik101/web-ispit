@@ -1,5 +1,106 @@
-* {
-  margin: 0px;
-  padding: 0px;
+@import url("https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap");
+body {
+  padding-top: 69px;
+  background-color: #f4f4f4;
+  font-family: 'Meera Inimai', sans-serif;
+}
+
+#nav {
+  background-color: #232020;
+}
+
+#nav .navbar .navbar-brand {
+  color: #ff7315;
+  font-size: 29px;
+}
+
+#nav .nav-item a {
+  border-right: 3px solid transparent;
+  color: #ff7315;
+}
+
+#nav .nav-item a:hover {
+  color: #f4f4f4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-right: 3px solid #ff7315;
+}
+
+#nav .social {
+  width: 60px;
+  height: 60px;
+  background-color: #ff7315;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 28px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#nav .social:hover {
+  -webkit-box-shadow: 0px 0px 15px 10px #141414;
+          box-shadow: 0px 0px 15px 10px #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#nav .form-inline button {
+  color: #ff7315;
+  border: 1px solid #ff7315;
+}
+
+#nav .form-inline button:hover {
+  background-color: #ff7315;
+  color: #232020;
+}
+
+#nav p {
+  color: #6c757d;
+}
+
+#nav p a {
+  color: #ff7315;
+}
+
+#footer {
+  background-color: #232020;
+  border-top: 5px solid #ff7315;
+}
+
+#footer p, #footer a, #footer h4 {
+  color: #ff7315;
+}
+
+#footer p .fab, #footer a .fab, #footer h4 .fab {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #margin #_2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #margin #_3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #footer {
+    background-image: url("../img/png.png");
+    background-position: 98% 82%;
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
 }
 /*# sourceMappingURL=autor.css.map */
