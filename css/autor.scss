@@ -60,6 +60,22 @@ body{
         }
     }
 }
+.list-group{
+    .list-group-item{
+        background-color: $gray-dark;
+        color: $orange;
+        &:hover{
+            background-color: $gray;
+            color: $white;
+        }
+    }
+    .active{
+        background-color: $gray-dark;
+        color: $orange;
+        border: none;
+        letter-spacing: 1px;
+    }
+}
 .f-size-23{
     font-size:23px;
 }
@@ -90,4 +106,18 @@ body{
         background-size: 150px;
         background-repeat: no-repeat;
     }
+}
+@media only screen and (max-width:576px){
+    .jumbotron{
+        img{
+            width: 255px;
+        }
+        .display-4{
+            font-size: 30px;
+        }
+        .size{
+            font-size: 20px;
+        }
+    }
+    
 }

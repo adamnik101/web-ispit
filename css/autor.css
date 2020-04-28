@@ -64,6 +64,23 @@ body {
   color: #ff7315;
 }
 
+.list-group .list-group-item {
+  background-color: #232020;
+  color: #ff7315;
+}
+
+.list-group .list-group-item:hover {
+  background-color: #3a3535;
+  color: #f4f4f4;
+}
+
+.list-group .active {
+  background-color: #232020;
+  color: #ff7315;
+  border: none;
+  letter-spacing: 1px;
+}
+
 .f-size-23 {
   font-size: 23px;
 }
@@ -106,6 +123,18 @@ body {
     background-position: 98% 82%;
     background-size: 150px;
     background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .jumbotron img {
+    width: 255px;
+  }
+  .jumbotron .display-4 {
+    font-size: 30px;
+  }
+  .jumbotron .size {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=autor.css.map */
