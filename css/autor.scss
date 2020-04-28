@@ -11,6 +11,7 @@ body{
 }
 #nav{
     background-color: $gray-dark;
+    border-bottom: 5px solid $orange;
     .navbar{
         .navbar-brand{
             color: $orange;
@@ -58,6 +59,9 @@ body{
             color: $orange;
         }
     }
+}
+.f-size-23{
+    font-size:23px;
 }
 #footer{
     background-color: $gray-dark;
