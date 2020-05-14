@@ -2,9 +2,11 @@
 body{
     font-family: 'Meera Inimai', sans-serif;
 }
-.brand-logo{
+#gorelinks .logo{
     font-size: 30px ;
-    font-weight: 600;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right:20px;
 }
 #links i{
     margin: 0;
@@ -16,9 +18,30 @@ body{
 #links #socials i{
     font-size: 25px;
 }
+#gorelinks{
+    height: 40px;
+}
 #gorelinks li a{
     font-size: 18px;
     font-weight: 400;
+    border-right: 3px solid transparent;
+}
+#gorelinks li:hover .fas{
+    color: #fff !important;
+    transition:0.25s ease-in-out;
+}
+#gorelinks li a:hover{
+    border-right: 3px solid rgb(255, 123, 0);
+    color: #fff !important;
+    transition: 0.25s ease-in-out;
+}
+#gorelinks li a .fas{
+    line-height: 2;
+    padding-right:5px;
+}
+.brand-logo{
+    font-size: 30px ;
+    font-weight: 500;
 }
 #hamburger{
     font-size: 37px;
