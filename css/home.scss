@@ -278,6 +278,7 @@ $white: #f4f4f4;
     #menuLogo{
         .nav-item{
             a{
+                transition: 0.2s;
                 &:hover{
                     color: $gray-dark;
                     transform: translateX(0);

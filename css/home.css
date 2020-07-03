@@ -357,6 +357,10 @@
 }
 
 @media (max-width: 991.98px) {
+  #menuLogo .nav-item a {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
   #menuLogo .nav-item a:hover {
     color: #232020;
     -webkit-transform: translateX(0);
