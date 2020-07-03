@@ -59,13 +59,31 @@ body{
         }
     }
 }
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+        transition:0.2s;
+    }
+    50%{
+        transform: rotateY(90deg);
+        transition:0.2s;
+    }
+    100%{
+        transform: rotateY(0deg);
+        transition: 0.2s;
+    }
+}
 .list-group{
     .list-group-item{
         background-color: $gray-dark;
         color: $orange;
+        transition: 0.2s;
         &:hover{
             background-color: $gray;
             color: $white;
+            .fab{
+                animation: rotate 0.6s;
+            }
         }
     }
     .active{
@@ -73,6 +91,11 @@ body{
         color: $orange;
         border: none;
         letter-spacing: 1px;
+        &:hover{
+            .fas{
+                animation: rotate 0.6s;
+            }
+        }
     }
 }
 .f-size-23{

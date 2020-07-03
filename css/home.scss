@@ -57,14 +57,17 @@ $white: #f4f4f4;
 .orange{
     color:$orange;
 }
-.nav-item{
-    a{
-        &:hover{
-            color: $gray-dark;
+#menuLogo{
+    .nav-item{
+        a{
+            transition: 0.2s;
+            &:hover{
+                color: $gray-dark;
+                transform: translateX(30px);
+                transition: 0.2s;
+            }
         }
     }
-}
-#menuLogo{
     .fa-facebook{
         color: #4267b2;
         &:hover{
@@ -167,9 +170,19 @@ $white: #f4f4f4;
         width: 250px;
         border: none;
         position: relative;
+        &:hover{
+            .card-img-top{
+                transform:scale(1.1);
+                transition: 0.3s;
+            }
+        }
+        .slika{
+            overflow: hidden;
+        }
         .card-img-top{
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
+            transition: 0.3s;
         }
         .card-body{
             background-color: $white;
@@ -262,6 +275,16 @@ $white: #f4f4f4;
     }
 }
 @media (max-width: 991.98px) {
+    #menuLogo{
+        .nav-item{
+            a{
+                &:hover{
+                    color: $gray-dark;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
     .carousel-item {
       height: 100%;
       img{

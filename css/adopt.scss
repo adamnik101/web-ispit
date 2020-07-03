@@ -94,9 +94,19 @@ body{
 .card{
     border: none;
     position: relative;
+    &:hover{
+        .card-img-top{
+            transform:scale(1.1);
+            transition: 0.3s;
+        }
+    }
+    .slika{
+        overflow: hidden;
+    }
     .card-img-top{
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
+        transition: 0.3s;
     }
     .card-body{
         background-color: $white;

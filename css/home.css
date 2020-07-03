@@ -91,8 +91,17 @@
   color: #ff7315;
 }
 
-.nav-item a:hover {
+#menuLogo .nav-item a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#menuLogo .nav-item a:hover {
   color: #232020;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #menuLogo .fa-facebook {
@@ -217,9 +226,22 @@
   position: relative;
 }
 
+.card:hover .card-img-top {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .slika {
+  overflow: hidden;
+}
+
 .card .card-img-top {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card .card-body {
@@ -335,6 +357,11 @@
 }
 
 @media (max-width: 991.98px) {
+  #menuLogo .nav-item a:hover {
+    color: #232020;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   .carousel-item {
     height: 100%;
   }

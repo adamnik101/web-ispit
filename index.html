@@ -285,9 +285,11 @@
       </div>
       <div class="container mb-5">
       <div class="row">
-        <div class="col justify-content-around d-flex p-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 justify-content-around d-flex p-3">
           <div class="card">
-            <img src="img/laki.jpg" class="card-img-top" alt="dog">
+            <div class="slika">
+              <img src="img/laki.jpg" class="card-img-top" alt="dog">
+            </div>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Lucky</h5>
               <p class="card-text"><span class="text-muted">2.5 months</span> <br> Male, Puppy</p>
@@ -298,9 +300,11 @@
             <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="col justify-content-around d-flex p-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 justify-content-around d-flex p-3">
           <div class="card">
-            <img src="img/laki22.jpg" class="card-img-top" alt="dog">
+            <div class="slika">
+              <img src="img/laki22.jpg" class="card-img-top" alt="dog">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Seth</h5><span class="text-muted">3 months</span>
               <p class="card-text">Male, Young</p>
@@ -311,9 +315,11 @@
               <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="col justify-content-around d-flex p-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 justify-content-around d-flex p-3">
           <div class="card">
-            <img src="img/laki33.jpg" class="card-img-top" alt="dog">
+            <div class="slika">
+              <img src="img/laki33.jpg" class="card-img-top" alt="dog">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Elsie</h5><span class="text-muted">3 months</span>
               <p class="card-text">Female, Young</p>
@@ -324,7 +330,7 @@
             <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
             </div>
           </div>
-        <div class="col justify-content-around d-flex p-3">
+        <div class="col-sm-6 col-md-12 col-lg-3 justify-content-around d-flex p-3">
          <a href="adopt.html" class="text-decoration-none"> <div class="card h-100" id="kartica">
             <div class="card-body align-items-center d-flex">
               <h5 class="card-title text-center"><i class="fas fa-search-plus f-size-80"></i> <br>Click to find 15014 more dogs on Dogfinder.</h5><br>
@@ -405,10 +411,6 @@
       document.getElementById("hideNav").style.top = "-500px";
     }
   }
-      // MODAL jQuery 
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
    // CHANGE FA ICONS ON CLICK JQUERY 
    $(document).ready(function () {
                   $('.fa').click(function () {

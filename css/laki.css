@@ -24,6 +24,7 @@ body {
 
 .modal .modal-footer {
   background-color: #ff7315;
+  position: relative;
 }
 
 #nav {

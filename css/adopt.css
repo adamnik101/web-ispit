@@ -105,9 +105,22 @@ body {
   position: relative;
 }
 
+.card:hover .card-img-top {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .slika {
+  overflow: hidden;
+}
+
 .card .card-img-top {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card .card-body {
