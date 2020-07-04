@@ -21,6 +21,62 @@
     <meta name="description" content="Dogfinder. 2020 Start your search to find a best dog that suites you! Find over 15000 dogs online for an adoption!">
 </head>
 <body>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t1" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange1">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t2" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange2">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange3">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t4" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange4">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t5" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange5">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t6" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange6">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t7" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange7">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t8" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <p id="toastChange8">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
   <!-- Navigation  -->
     <div class="container-fluid fixed-top" id="nav">
         <div class="row">
@@ -224,7 +280,7 @@
                 <div class="card-footer">
                   <a href="laki.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
-                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <a href="#!" onclick="change('toastChange1')" class="floating" id="f1" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <div class="slika">
@@ -237,7 +293,7 @@
                 <div class="card-footer">
                   <a href="seth.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
-                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <a href="#!" onclick="change('toastChange2')" class="floating" id="f2" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <div class="slika">
@@ -250,7 +306,7 @@
                 <div class="card-footer">
                   <a href="elsie.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
-                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <a href="#!" onclick="change('toastChange3')" class="floating" id="f3" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
               <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
                 <div class="slika">
@@ -263,7 +319,7 @@
                 <div class="card-footer">
                   <a href="chonky.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
                 </div>
-                <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <a href="#!" onclick="change('toastChange4')" class="floating" id="f4" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
         </div>
         <!-- Second row  -->
@@ -279,7 +335,7 @@
             <div class="card-footer">
               <a href="morty.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange5')" class="floating" id="f5" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
             <div class="slika">
@@ -292,7 +348,7 @@
             <div class="card-footer">
               <a href="tea.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange6')" class="floating" id="f6" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1">
             <div class="slika">
@@ -305,7 +361,7 @@
             <div class="card-footer">
               <a href="pickle.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange7')" class="floating" id="f7" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
           <div class="card col-6 col-md p-0 m-md-1">
             <div class="slika">
@@ -318,7 +374,7 @@
             <div class="card-footer">
               <a href="rocky.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" class="floating" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange8')" class="floating" id="f8" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
         </div>
         <!-- Pagination  -->
@@ -406,6 +462,64 @@
             $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+//TOAST ON CLICK 
+$(document).ready(function(){
+  $('#f1').click(function(){
+    $('#t1').toast({animation: true, delay: 4000});
+    $('#t1').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f2').click(function(){
+    $('#t2').toast({animation: true, delay: 4000});
+    $('#t2').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f3').click(function(){
+    $('#t3').toast({animation: true, delay: 4000});
+    $('#t3').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f4').click(function(){
+    $('#t4').toast({animation: true, delay: 4000});
+    $('#t4').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f5').click(function(){
+    $('#t5').toast({animation: true, delay: 4000});
+    $('#t5').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f6').click(function(){
+    $('#t6').toast({animation: true, delay: 4000});
+    $('#t6').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f7').click(function(){
+    $('#t7').toast({animation: true, delay: 4000});
+    $('#t7').toast('show');
+  });
+});
+$(document).ready(function(){
+  $('#f8').click(function(){
+    $('#t8').toast({animation: true, delay: 4000});
+    $('#t8').toast('show');
+  });
+});
+function change(dog1) {
+  var x = document.getElementById(dog1);
+  if (x.innerHTML === "Dog has been removed from favorites.") {
+    x.innerHTML = "Dog has been added to favorites.";
+  } 
+  else {
+    x.innerHTML = "Dog has been removed from favorites.";
+  }
+}
       </script>
   </body>
 </html>

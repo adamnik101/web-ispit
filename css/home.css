@@ -7,6 +7,30 @@
   font-family: 'Meera Inimai', sans-serif;
 }
 
+body {
+  position: relative;
+}
+
+body .abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+body .abs .toast {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+body .abs .toast .toast-body {
+  background-color: #ff7315;
+  color: #3a3535;
+  font-style: italic;
+  font-size: 15px;
+}
+
 #hideNav a:hover {
   color: #f4f4f4;
 }

@@ -10,6 +10,26 @@ $white: #f4f4f4;
     box-sizing: border-box;
     font-family: 'Meera Inimai', sans-serif;
 }
+body{
+    position: relative;
+    .abs{
+        position: absolute;
+        top:0;
+        right: 0;
+        z-index: 20;
+        .toast{
+            position: fixed;
+            bottom: 20px;
+            left:20px;
+            .toast-body{
+                background-color: $orange;
+                color: $gray;
+                font-style: italic;
+                font-size: 15px;
+            }
+        }
+    }
+}
 #hideNav{
     a{
         &:hover{
