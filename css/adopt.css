@@ -23,13 +23,20 @@ body .abs .toast {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  border-bottom: 3px solid #ff7315;
+  border-radius: 0;
+  font-size: 15px;
+}
+
+body .abs .toast .toast-header {
+  background-color: #232020;
+  border: none;
 }
 
 body .abs .toast .toast-body {
-  background-color: #ff7315;
-  color: #3a3535;
+  background-color: #232020;
+  color: #ff7315;
   font-style: italic;
-  font-size: 15px;
 }
 
 #nav {

@@ -22,11 +22,17 @@ body{
             position: fixed;
             bottom: 20px;
             left:20px;
+            border-bottom: 3px solid $orange;
+            border-radius: 0;
+            font-size: 15px;
+            .toast-header{
+                background-color: $gray-dark;
+                border: none;
+            }
             .toast-body{
-                background-color: $orange;
-                color: $gray;
+                background-color: $gray-dark;
+                color: $orange;
                 font-style: italic;
-                font-size: 15px;
             }
         }
     }
