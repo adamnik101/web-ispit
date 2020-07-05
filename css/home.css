@@ -7,32 +7,23 @@
   font-family: 'Meera Inimai', sans-serif;
 }
 
-body {
-  position: relative;
-}
-
-body .abs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 20;
-}
-
-body .abs .toast {
+.toast {
   position: fixed;
   bottom: 20px;
   left: 20px;
   border-bottom: 3px solid #ff7315;
   border-radius: 0;
   font-size: 15px;
+  z-index: 20;
+  pointer-events: none;
 }
 
-body .abs .toast .toast-header {
+.toast .toast-header {
   background-color: #232020;
   border: none;
 }
 
-body .abs .toast .toast-body {
+.toast .toast-body {
   background-color: #232020;
   color: #ff7315;
   font-style: italic;
