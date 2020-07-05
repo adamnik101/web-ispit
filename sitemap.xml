@@ -95,8 +95,8 @@ https://adamnik101.github.io/web-ispit/tea.html
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
-</urlset>
-loc>
+<url>
+<loc>
 https://adamnik101.github.io/web-ispit/autor.html
 </loc>
 <lastmod>2020-07-05</lastmod>
