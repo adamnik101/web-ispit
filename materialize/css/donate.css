@@ -161,6 +161,11 @@ body{
 .center i{
     font-size: 20px;
 }
+@media only screen and (max-width:992px){
+    #back{
+        height: 400px;
+    }
+}
 @media only screen and (max-width:600px){
     #back{
         height: 350px;

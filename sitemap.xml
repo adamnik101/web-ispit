@@ -4,7 +4,7 @@
 https://adamnik101.github.io/web-ispit/index.html
 </loc>
 <lastmod>2020-07-05</lastmod>
-<changefreq>monthly</changefreq>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 <url>
@@ -20,7 +20,7 @@ https://adamnik101.github.io/web-ispit/adopt.html
 https://adamnik101.github.io/web-ispit/materialize/donate.html
 </loc>
 <lastmod>2020-07-05</lastmod>
-<changefreq>monthly</changefreq>
+<changefreq>yearly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
@@ -92,7 +92,15 @@ https://adamnik101.github.io/web-ispit/seth.html
 https://adamnik101.github.io/web-ispit/tea.html
 </loc>
 <lastmod>2020-07-05</lastmod>
-<changefreq>weekly</changefreq>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+</urlset>
+loc>
+https://adamnik101.github.io/web-ispit/autor.html
+</loc>
+<lastmod>2020-07-05</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.4</priority>
 </url>
 </urlset>
