@@ -556,6 +556,7 @@ body {
 .stats {
   background-color: #232020;
   color: #ff7315;
+  border-top: 5px solid #ff7315;
 }
 
 .stats p {
