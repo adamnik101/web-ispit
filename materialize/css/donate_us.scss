@@ -33,6 +33,27 @@ body {
 		}
 	}
 }
+.dropdown-content{
+	li{
+		span{
+			color: rgb(61, 61, 61);
+		}
+	}
+}
+.autocomplete-content{
+	background-color: rgb(255, 123, 0);
+	li{
+		&:hover{
+			background-color: rgb(255, 115, 0);
+		}
+		color: rgb(92, 92, 92);
+		.highlight{
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+		}
+	}
+}
+
 #links {
 	i {
 		margin: 0;

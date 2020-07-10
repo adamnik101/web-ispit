@@ -38,6 +38,27 @@ body {
   transition: 0.25s ease-in-out;
 }
 
+.dropdown-content li span {
+  color: #3d3d3d;
+}
+
+.autocomplete-content {
+  background-color: #ff7b00;
+}
+
+.autocomplete-content li {
+  color: #5c5c5c;
+}
+
+.autocomplete-content li:hover {
+  background-color: #ff7300;
+}
+
+.autocomplete-content li .highlight {
+  color: black;
+  font-weight: bold;
+}
+
 #links i {
   margin: 0;
   font-size: 18px;
