@@ -212,17 +212,14 @@
             </div>
         </div>
         <!-- Search form  -->
-        <div class="row naslov mb-sm-3 mt-sm-3 mb-0 mt-0">
-            <div class="col m-3 p-0">
-                <h2 class="text-left pb-2">Search for a Dog <i class="fas fa-dog"></i></h2>
-                <form>
-                    <div class="form-row">
-                        <div class="col-md-4 col-sm-6 mb-3">
+        <div class="row">
+            <div class="col p-0 back">
+                <h2 class="text-left p-3 naslov">Search for a Dog <i class="fas fa-dog"></i></h2>
+                <form method="POST" action=".php">
+                    <div class="form-row m-0 p-sm-2">
+                        <div class="col-md-4 col-sm-6 mb-3 pr-3 pr-sm-0 pl-3 pl-sm-0 pr-sm-1">
                             <label for="radius" class="font-weight-bold">Mile Radius:</label>
                             <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="radius"><i class="fas fa-street-view"></i></span>
-                              </div>
                             <select class="selectpicker form-control" data-style="btn-new" id="radius">
                               <option selected value="any">Any</option>
                               <option value="25mi">25 mi</option>
@@ -232,12 +229,9 @@
                             </select>
                           </div>
                           </div>
-                      <div class="col-md-4 col-sm-6 mb-3">
+                      <div class="col-md-4 col-sm-6 mb-3 pr-3 pr-sm-0 pl-3 pl-sm-1 pr-md-1">
                         <label for="breed" class="font-weight-bold">Dog Breed:</label>
                         <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="breed"><i class="fas fa-dog"></i></span>
-                          </div>
                         <select class="selectpicker form-control" data-style="btn-new" id="breed">
                           <option selected value="any">Any</option>
                           <option value="akita">Akita</option>
@@ -255,23 +249,17 @@
                         </select>
                       </div>
                       </div>
-                      <div class="col-md-4 col-sm-12 mb-3">
+                      <div class="col-md-4 col-sm-12 mb-3 pr-3 pr-sm-0 pl-3 pl-sm-0 pl-md-1">
                         <label for="zip" class="font-weight-bold">Zip Code:</label>
                         <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="zip"><i class="fas fa-map-marker-alt"></i></span>
-                          </div>
                           <input type="text" class="form-control" data-style="btn-new" id="zip" placeholder="Your Zip Code">
                         </div>
                       </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="form-row m-0 p-sm-2">
+                        <div class="col-md-4 col-sm-6 mb-3 pr-3 pr-sm-0 pl-3 pl-sm-0 pr-sm-1">
                             <label for="gender" class="font-weight-bold">Gender:</label>
                             <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="gender"><i class="fas fa-venus-mars"></i></span>
-                              </div>
                             <select class="selectpicker form-control" data-style="btn-new" id="gender">
                               <option selected value="any">Any</option>
                               <option value="m">Male</option>
@@ -279,23 +267,20 @@
                             </select>
                           </div>
                           </div>
-                          <div class="col-md-4 col-sm-6 mb-3">
+                          <div class="col-md-4 col-sm-6 mb-3 pr-3 pr-sm-0 pl-3 pl-sm-0 pl-sm-1 pr-md-1">
                             <label for="size" class="font-weight-bold ">Size:</label>
                             <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="size"><i class="fas fa-expand-arrows-alt"></i></span>
-                              </div>
                             <select class="selectpicker form-control" data-style="btn-new" id="size">
                               <option selected value="any">Any</option>
-                              <option value="small">Small 25lbs(11kg) or less</option>
-                              <option value="medium">Medium 26-60lbs(11-27kg)</option>
-                              <option value="large">Large 61-100lbs(28-45kg)</option>
-                              <option value="x-large">X-large 101lbs(46kg)+</option>
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                              <option value="large">Large</option>
+                              <option value="x-large">X-large</option>
                             </select>
                           </div>
                           </div>
-                          <div class="col-md-4 col-sm-12 mb-3 d-flex align-items-end">
-                            <button class="btn btn-dark btn-block" type="submit">Search Now!</button>
+                          <div class="col-md-4 col-sm-12 mb-3 p-sm-0 p-3 pl-md-1 d-flex align-items-end">
+                            <button class="btn btn-dark btn-block f-size-20" type="submit">Search Now!</button>
                           </div>
                     </div>
                   </form>

@@ -593,16 +593,6 @@ body{
             transition: 0.2s;
         }
     }
-    .form-inline{
-        button{
-            color: $orange;
-            border: 1px solid $orange;
-            &:hover{
-                background-color: $orange;
-                color: $gray-dark;
-            }
-        }
-    }
     p{
         color: #6c757d;
         a{
@@ -731,9 +721,17 @@ body{
         font-size: 20px;
     }
 }
-.btn-new{
-    background-color: $white !important;
-    color: $gray-dark !important;
+.btn-new, input[type=text]{
+    background-color: $gray-dark !important;
+    color: $orange !important;
+    font-size: 20px;
+    &:focus{
+        box-shadow: none;
+        border: none;
+    }
+    &:active{
+        box-shadow:none;
+    }
 }
 .dropdown-menu{
     background-color: $gray-dark !important;
@@ -751,6 +749,9 @@ body{
             color: $orange !important;
         }
     }
+}
+.back{
+    background-color: #f4f4f4;
 }
 @media only screen and (max-width: 575.98px) { 
     h2{

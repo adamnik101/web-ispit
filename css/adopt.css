@@ -79,16 +79,6 @@ body {
   transition: 0.2s;
 }
 
-#nav .form-inline button {
-  color: #ff7315;
-  border: 1px solid #ff7315;
-}
-
-#nav .form-inline button:hover {
-  background-color: #ff7315;
-  color: #232020;
-}
-
 #nav p {
   color: #6c757d;
 }
@@ -242,9 +232,21 @@ body {
   font-size: 20px;
 }
 
-.btn-new {
-  background-color: #f4f4f4 !important;
-  color: #232020 !important;
+.btn-new, input[type=text] {
+  background-color: #232020 !important;
+  color: #ff7315 !important;
+  font-size: 20px;
+}
+
+.btn-new:focus, input[type=text]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.btn-new:active, input[type=text]:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .dropdown-menu {
@@ -267,6 +269,10 @@ body {
 
 .dropdown-menu .active:hover {
   color: #ff7315 !important;
+}
+
+.back {
+  background-color: #f4f4f4;
 }
 
 @media only screen and (max-width: 575.98px) {
