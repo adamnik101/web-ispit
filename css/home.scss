@@ -142,16 +142,6 @@ $white: #f4f4f4;
             transition: 0.2s;
         }
     }
-    .form-inline{
-        button{
-            color: $orange;
-            border: 1px solid $orange;
-            &:hover{
-                background-color: $orange;
-                color: $gray-dark;
-            }
-        }
-    }
     p{
         color: #6c757d;
         a{
@@ -182,9 +172,47 @@ $white: #f4f4f4;
 .carousel-item img{
     height: 600px;
 }
-.custom-select{
-    color: $gray-dark;
+.roundT{
+    border-radius: 15px 15px 0px 0px;
+    background-color: $gray-dark;
+    color:$orange;
+    border-bottom: 5px solid $orange;
+}
+.search{
+    background-color: $white;
+    border-bottom: 5px solid $gray-dark;
+    .btn-dark{
+        color: $gray-dark;
+        background-color: $orange;
+        border: none;
     }
+}
+.btn-new{
+    background-color: $gray-dark;
+    color: $orange;
+    font-size: 20px;
+    &:hover{
+        background-color: $gray !important;
+        color: $orange;
+}
+}
+.dropdown-menu{
+    background-color: $gray-dark !important;
+    font-size: 20px;
+    .dropdown-item{
+        color: $orange !important;
+        &:hover{
+            background-color: $gray !important;
+        }
+    }
+    .active{
+        background-color: $orange !important;
+        color: $gray-dark !important;
+        &:hover{
+            color: $orange !important;
+        }
+    }
+}
 .card{
         width: 250px;
         border: none;
@@ -251,6 +279,10 @@ $white: #f4f4f4;
 }
 #footer{
     border-top: 5px solid $orange;
+    background-color: $gray-dark;
+    p, a{
+        color:$orange;
+    }
     i{
         font-size: 20px;
     }
@@ -312,19 +344,3 @@ $white: #f4f4f4;
       }
     }
   }
-.search{
-    background-color: $white;
-    border-bottom: 5px solid $gray-dark;
-}
-.roundT{
-    border-radius: 15px 15px 0px 0px;
-    background-color: $gray-dark;
-    color:$orange;
-    border-bottom: 5px solid $orange;
-}
-#footer{
-    background-color: $gray-dark;
-    p, a{
-        color:$orange;
-    }
-}

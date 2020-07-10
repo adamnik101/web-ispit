@@ -143,16 +143,6 @@ $white: #f4f4f4;
             transition: 0.2s;
         }
     }
-    .form-inline{
-        button{
-            color: $orange;
-            border: 1px solid $orange;
-            &:hover{
-                background-color: $orange;
-                color: $gray-dark;
-            }
-        }
-    }
     p{
         color: #6c757d;
         a{
@@ -183,9 +173,47 @@ $white: #f4f4f4;
 .carousel-item img{
     height: 600px;
 }
-.custom-select{
-    color: $gray-dark;
+.roundT{
+    border-radius: 15px 15px 0px 0px;
+    background-color: $gray-dark;
+    color:$orange;
+    border-bottom: 5px solid $orange;
+}
+.search{
+    background-color: $white;
+    border-bottom: 5px solid $gray-dark;
+    .btn-dark{
+        color: $gray-dark;
+        background-color: $orange;
+        border: none;
     }
+}
+.btn-new{
+    background-color: $gray-dark;
+    color: $orange;
+    font-size: 20px;
+    &:hover{
+        background-color: $gray !important;
+        color: $orange;
+    }
+}
+.dropdown-menu{
+    background-color: $gray-dark !important;
+    font-size: 20px;
+    .dropdown-item{
+        color: $orange !important;
+        &:hover{
+            background-color: $gray !important;
+        }
+    }
+    .active{
+        background-color: $orange !important;
+        color: $gray-dark !important;
+        &:hover{
+            color: $orange !important;
+        }
+    }
+}
 .card{
         width: 250px;
         border: none;
@@ -252,6 +280,10 @@ $white: #f4f4f4;
 }
 #footer{
     border-top: 5px solid $orange;
+    background-color: $gray-dark;
+    p, a{
+        color:$orange;
+    }
     i{
         font-size: 20px;
     }
@@ -313,22 +345,6 @@ $white: #f4f4f4;
       }
     }
   }
-.search{
-    background-color: $white;
-    border-bottom: 5px solid $gray-dark;
-}
-.roundT{
-    border-radius: 15px 15px 0px 0px;
-    background-color: $gray-dark;
-    color:$orange;
-    border-bottom: 5px solid $orange;
-}
-#footer{
-    background-color: $gray-dark;
-    p, a{
-        color:$orange;
-    }
-}
 // END OF HOMEPAGE SCSS
 
 
@@ -520,6 +536,11 @@ body{
     padding-top: 69px;
     font-family: 'Meera Inimai', sans-serif;
 }
+.btn{
+    color: $gray-dark;
+    background-color: $orange;
+    border: 0px;
+}
 .toast{
     position: fixed;
     bottom: 20px;
@@ -616,83 +637,78 @@ body{
             }
         }
     }
-}
-.card{
-    border: none;
-    position: relative;
-    &:hover{
-        .card-img-top{
-            transform:scale(1.1);
-            transition: 0.3s;
-        }
-    }
-    .slika{
-        overflow: hidden;
-    }
-    .card-img-top{
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        transition: 0.3s;
-    }
-    .card-body{
-        background-color: $white;
-    }
-    .card-footer{
-        border-radius: 0px;
-        border-bottom: 3px solid $orange;
-        background-color: $gray-dark;
-        .btn{
-            color: $gray-dark;
-            background-color: $orange;
-            border: 0px;
-        }
-    }
-    .floating{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50% 50%;
-        background-color: $gray-dark;
-        color: $orange;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-        font-weight: 900;
-        text-decoration: none;
-        right: 10px;
-        bottom: 165px ;
-        transition: all 0.2s ease-in-out;
+    .card{
+        border: none;
+        position: relative;
         &:hover{
-            background-color: $orange;
-            color: $gray-dark;
-            transform: scale(1.2);
-        }
-        }
-}
-.pagination{
-    .page-item{
-        .page-link{
-            color: $orange;
-            background-color: $gray-dark;
-            border: 0px;
-            transition: 0.4s;
-            &:hover{
-                color: $gray-dark;
-                background-color: $orange;
-                transition: 0.4s;
+            .card-img-top{
+                transform:scale(1.1);
+                transition: 0.3s;
             }
         }
-    }
-    .active{
-        .page-link{
-        background-color: $orange;
-        color: $gray-dark;
+        .slika{
+            overflow: hidden;
         }
+        .card-img-top{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            transition: 0.3s;
+        }
+        .card-body{
+            background-color: $white;
+        }
+        .card-footer{
+            border-radius: 0px;
+            border-bottom: 3px solid $orange;
+            background-color: $gray-dark;
+        }
+        .floating{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50% 50%;
+            background-color: $gray-dark;
+            color: $orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: none;
+            right: 10px;
+            bottom: 165px ;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background-color: $orange;
+                color: $gray-dark;
+                transform: scale(1.2);
+            }
+            }
     }
-    .disabled{
-        .page-link{
-            background-color: $gray;
+    .pagination{
+        .page-item{
+            .page-link{
+                color: $orange;
+                background-color: $gray-dark;
+                border: 0px;
+                transition: 0.4s;
+                &:hover{
+                    color: $gray-dark;
+                    background-color: $orange;
+                    transition: 0.4s;
+                }
+            }
+        }
+        .active{
+            .page-link{
+            background-color: $orange;
+            color: $gray-dark;
+            }
+        }
+        .disabled{
+            .page-link{
+                background-color: $gray;
+            }
         }
     }
 }
@@ -713,6 +729,27 @@ body{
     }
     .fab{
         font-size: 20px;
+    }
+}
+.btn-new{
+    background-color: $white !important;
+    color: $gray-dark !important;
+}
+.dropdown-menu{
+    background-color: $gray-dark !important;
+    font-size: 20px;
+    .dropdown-item{
+        color: $orange !important;
+        &:hover{
+            background-color: $gray !important;
+        }
+    }
+    .active{
+        background-color: $orange !important;
+        color: $gray-dark !important;
+        &:hover{
+            color: $orange !important;
+        }
     }
 }
 @media only screen and (max-width: 575.98px) { 

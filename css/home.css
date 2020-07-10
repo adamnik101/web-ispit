@@ -192,16 +192,6 @@
   transition: 0.2s;
 }
 
-#hideNav .form-inline button, #smallResNav .form-inline button {
-  color: #ff7315;
-  border: 1px solid #ff7315;
-}
-
-#hideNav .form-inline button:hover, #smallResNav .form-inline button:hover {
-  background-color: #ff7315;
-  color: #232020;
-}
-
 #hideNav p, #smallResNav p {
   color: #6c757d;
 }
@@ -238,8 +228,55 @@
   height: 600px;
 }
 
-.custom-select {
+.roundT {
+  border-radius: 15px 15px 0px 0px;
+  background-color: #232020;
+  color: #ff7315;
+  border-bottom: 5px solid #ff7315;
+}
+
+.search {
+  background-color: #f4f4f4;
+  border-bottom: 5px solid #232020;
+}
+
+.search .btn-dark {
   color: #232020;
+  background-color: #ff7315;
+  border: none;
+}
+
+.btn-new {
+  background-color: #232020;
+  color: #ff7315;
+  font-size: 20px;
+}
+
+.btn-new:hover {
+  background-color: #3a3535 !important;
+  color: #ff7315;
+}
+
+.dropdown-menu {
+  background-color: #232020 !important;
+  font-size: 20px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #ff7315 !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #3a3535 !important;
+}
+
+.dropdown-menu .active {
+  background-color: #ff7315 !important;
+  color: #232020 !important;
+}
+
+.dropdown-menu .active:hover {
+  color: #ff7315 !important;
 }
 
 .card {
@@ -329,6 +366,11 @@
 
 #footer {
   border-top: 5px solid #ff7315;
+  background-color: #232020;
+}
+
+#footer p, #footer a {
+  color: #ff7315;
 }
 
 #footer i {
@@ -394,25 +436,5 @@
   .carousel-item img {
     height: 100%;
   }
-}
-
-.search {
-  background-color: #f4f4f4;
-  border-bottom: 5px solid #232020;
-}
-
-.roundT {
-  border-radius: 15px 15px 0px 0px;
-  background-color: #232020;
-  color: #ff7315;
-  border-bottom: 5px solid #ff7315;
-}
-
-#footer {
-  background-color: #232020;
-}
-
-#footer p, #footer a {
-  color: #ff7315;
 }
 /*# sourceMappingURL=home.css.map */

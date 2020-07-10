@@ -11,6 +11,12 @@ body {
   font-family: 'Meera Inimai', sans-serif;
 }
 
+.btn {
+  color: #232020;
+  background-color: #ff7315;
+  border: 0px;
+}
+
 .toast {
   position: fixed;
   bottom: 20px;
@@ -122,46 +128,40 @@ body {
   color: #ff7315;
 }
 
-.card {
+#gore .card {
   border: none;
   position: relative;
 }
 
-.card:hover .card-img-top {
+#gore .card:hover .card-img-top {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.card .slika {
+#gore .card .slika {
   overflow: hidden;
 }
 
-.card .card-img-top {
+#gore .card .card-img-top {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.card .card-body {
+#gore .card .card-body {
   background-color: #f4f4f4;
 }
 
-.card .card-footer {
+#gore .card .card-footer {
   border-radius: 0px;
   border-bottom: 3px solid #ff7315;
   background-color: #232020;
 }
 
-.card .card-footer .btn {
-  color: #232020;
-  background-color: #ff7315;
-  border: 0px;
-}
-
-.card .floating {
+#gore .card .floating {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -186,14 +186,14 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.card .floating:hover {
+#gore .card .floating:hover {
   background-color: #ff7315;
   color: #232020;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.pagination .page-item .page-link {
+#gore .pagination .page-item .page-link {
   color: #ff7315;
   background-color: #232020;
   border: 0px;
@@ -201,19 +201,19 @@ body {
   transition: 0.4s;
 }
 
-.pagination .page-item .page-link:hover {
+#gore .pagination .page-item .page-link:hover {
   color: #232020;
   background-color: #ff7315;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.pagination .active .page-link {
+#gore .pagination .active .page-link {
   background-color: #ff7315;
   color: #232020;
 }
 
-.pagination .disabled .page-link {
+#gore .pagination .disabled .page-link {
   background-color: #3a3535;
 }
 
@@ -240,6 +240,33 @@ body {
 
 #footer .fab {
   font-size: 20px;
+}
+
+.btn-new {
+  background-color: #f4f4f4 !important;
+  color: #232020 !important;
+}
+
+.dropdown-menu {
+  background-color: #232020 !important;
+  font-size: 20px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #ff7315 !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #3a3535 !important;
+}
+
+.dropdown-menu .active {
+  background-color: #ff7315 !important;
+  color: #232020 !important;
+}
+
+.dropdown-menu .active:hover {
+  color: #ff7315 !important;
 }
 
 @media only screen and (max-width: 575.98px) {

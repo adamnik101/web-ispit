@@ -217,13 +217,13 @@
                 <h2 class="text-left pb-2">Search for a Dog <i class="fas fa-dog"></i></h2>
                 <form>
                     <div class="form-row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 col-sm-6 mb-3">
                             <label for="radius" class="font-weight-bold">Mile Radius:</label>
                             <div class="input-group">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="radius"><i class="fas fa-street-view"></i></span>
                               </div>
-                            <select class="custom-select" id="radius">
+                            <select class="selectpicker form-control" data-style="btn-new" id="radius">
                               <option selected value="any">Any</option>
                               <option value="25mi">25 mi</option>
                               <option value="50mi">50 mi</option>
@@ -232,13 +232,13 @@
                             </select>
                           </div>
                           </div>
-                      <div class="col-md-4 mb-3">
+                      <div class="col-md-4 col-sm-6 mb-3">
                         <label for="breed" class="font-weight-bold">Dog Breed:</label>
                         <div class="input-group">
                           <div class="input-group-prepend">
                             <span class="input-group-text" id="breed"><i class="fas fa-dog"></i></span>
                           </div>
-                        <select class="custom-select" id="breed">
+                        <select class="selectpicker form-control" data-style="btn-new" id="breed">
                           <option selected value="any">Any</option>
                           <option value="akita">Akita</option>
                           <option value="amerbull">American Stafford</option>
@@ -255,37 +255,37 @@
                         </select>
                       </div>
                       </div>
-                      <div class="col-md-4 mb-3">
+                      <div class="col-md-4 col-sm-12 mb-3">
                         <label for="zip" class="font-weight-bold">Zip Code:</label>
                         <div class="input-group">
                           <div class="input-group-prepend">
                             <span class="input-group-text" id="zip"><i class="fas fa-map-marker-alt"></i></span>
                           </div>
-                          <input type="text" class="form-control" id="zip" placeholder="Your Zip Code">
+                          <input type="text" class="form-control" data-style="btn-new" id="zip" placeholder="Your Zip Code">
                         </div>
                       </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 col-sm-6 mb-3">
                             <label for="gender" class="font-weight-bold">Gender:</label>
                             <div class="input-group">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="gender"><i class="fas fa-venus-mars"></i></span>
                               </div>
-                            <select class="custom-select" id="gender">
+                            <select class="selectpicker form-control" data-style="btn-new" id="gender">
                               <option selected value="any">Any</option>
                               <option value="m">Male</option>
                               <option value="f">Female</option>
                             </select>
                           </div>
                           </div>
-                          <div class="col-md-4 mb-3">
+                          <div class="col-md-4 col-sm-6 mb-3">
                             <label for="size" class="font-weight-bold ">Size:</label>
                             <div class="input-group">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="size"><i class="fas fa-expand-arrows-alt"></i></span>
                               </div>
-                            <select class="custom-select" id="size">
+                            <select class="selectpicker form-control" data-style="btn-new" id="size">
                               <option selected value="any">Any</option>
                               <option value="small">Small 25lbs(11kg) or less</option>
                               <option value="medium">Medium 26-60lbs(11-27kg)</option>
@@ -294,7 +294,7 @@
                             </select>
                           </div>
                           </div>
-                          <div class="col-md-4 mb-3 d-flex align-items-end">
+                          <div class="col-md-4 col-sm-12 mb-3 d-flex align-items-end">
                             <button class="btn btn-dark btn-block" type="submit">Search Now!</button>
                           </div>
                     </div>
@@ -309,7 +309,7 @@
         </div>
         <!-- First row  -->
         <div class="row">
-              <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+              <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
                 <div class="slika">
                   <img src="img/laki.jpg" class="card-img-top" alt="dog">
                 </div>
@@ -322,7 +322,7 @@
                 </div>
                 <a href="#!" onclick="change('toastChange1')" class="floating" id="f1" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
-              <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+              <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
                 <div class="slika">
                   <img src="img/laki22.jpg" class="card-img-top" alt="dog">
                 </div>
@@ -335,7 +335,7 @@
                 </div>
                 <a href="#!" onclick="change('toastChange2')" class="floating" id="f2" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
-              <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+              <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
                 <div class="slika">
                   <img src="img/laki33.jpg" class="card-img-top" alt="dog">
                 </div>
@@ -348,7 +348,7 @@
                 </div>
                 <a href="#!" onclick="change('toastChange3')" class="floating" id="f3" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
-              <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+              <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
                 <div class="slika">
                   <img src="img/pit.jpg" class="card-img-top" alt="dog">
                 </div>
@@ -361,10 +361,8 @@
                 </div>
                 <a href="#!" onclick="change('toastChange4')" class="floating" id="f4" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
               </div>
-        </div>
         <!-- Second row  -->
-        <div class="row">
-          <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+          <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
             <div class="slika">
               <img src="img/bull.jpeg" class="card-img-top" alt="dog">
             </div>
@@ -377,7 +375,7 @@
             </div>
             <a href="#!" onclick="change('toastChange5')" class="floating" id="f5" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
-          <div class="card col-6 col-md p-0 m-md-1 mb-3 mb-md-0">
+          <div class="card col-6 col-sm-4 col-md-3 p-0 p-md-1">
             <div class="slika">
               <img src="img/corgi.jpeg" class="card-img-top" alt="dog">
             </div>
@@ -390,7 +388,7 @@
             </div>
             <a href="#!" onclick="change('toastChange6')" class="floating" id="f6" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
-          <div class="card col-6 col-md p-0 m-md-1">
+          <div class="card col-6 col-sm-4 col-md-3 offset-sm-1 offset-md-0 p-0 p-md-1">
             <div class="slika">
               <img src="img/boxer.jpg" class="card-img-top" alt="dog">
             </div>
@@ -403,7 +401,7 @@
             </div>
             <a href="#!" onclick="change('toastChange7')" class="floating" id="f7" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
-          <div class="card col-6 col-md p-0 m-md-1">
+          <div class="card col-6 col-sm-4 col-md-3 offset-sm-2 offset-md-0 p-0 p-md-1">
             <div class="slika">
               <img src="img/rot.jpg" class="card-img-top" alt="dog">
             </div>
@@ -415,7 +413,7 @@
               <a href="rocky.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
             <a href="#!" onclick="change('toastChange8')" class="floating" id="f8" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          </div>
+        </div>
         </div>
         <!-- Pagination  -->
         <div class="row mt-3">
@@ -562,5 +560,13 @@ function change(dog1) {
   }
 }
       </script>
+      <!-- BOOTSTRAP SELECT OPTION CHANGE -->
+      
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
   </body>
 </html>
