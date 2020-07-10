@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Meera+Inimai&display=swap");
+body {
+	font-family: 'Meera Inimai', sans-serif;
+}
+#gorelinks {
+	.logo {
+		font-size: 30px;
+		font-weight: 500;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	height: 40px;
+	li {
+		a {
+			font-size: 18px;
+			font-weight: 400;
+			border-right: 3px solid transparent;
+			&:hover {
+				border-right: 3px solid rgb(255, 123, 0);
+				color: #fff !important;
+				transition: 0.25s ease-in-out;
+			}
+			.fas {
+				line-height: 2;
+				padding-right: 5px;
+			}
+		}
+		&:hover {
+			.fas {
+				color: #fff !important;
+				transition: 0.25s ease-in-out;
+			}
+		}
+	}
+}
+#links {
+	i {
+		margin: 0;
+		font-size: 18px;
+	}
+	li {
+		a {
+			font-size: 16px;
+		}
+	}
+	#socials {
+		i {
+			font-size: 25px;
+		}
+	}
+}
+#hamburger {
+	font-size: 37px;
+}
+.brand-logo {
+	font-size: 30px;
+	font-weight: 500;
+}
+#back {
+	background-image: url('../img/paral.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.height {
+	height: 850px;
+}
+.fomr {
+	padding: 40px !important;
+	box-shadow: inset 0px 0px 20px 20px rgb(20, 20, 20);
+	.input-field {
+		input[type=text] {
+			color: rgb(255, 115, 0);
+			&:focus {
+				+ {
+					label {
+						color: rgb(255, 115, 0);
+					}
+				}
+				border-bottom: 1px solid rgb(255, 115, 0);
+				box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+			}
+		}
+		input[type=tel] {
+			color: rgb(255, 115, 0);
+			&:focus {
+				border-bottom: 1px solid rgb(255, 115, 0);
+				box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+				+ {
+					label {
+						color: rgb(255, 115, 0);
+					}
+				}
+			}
+		}
+		input[type=email] {
+			color: rgb(255, 115, 0);
+			&:focus {
+				border-bottom: 1px solid rgb(255, 115, 0);
+				box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+				+ {
+					label {
+						color: rgb(255, 115, 0);
+					}
+				}
+			}
+		}
+		input[type=number] {
+			color: rgb(255, 115, 0);
+			&:focus {
+				border-bottom: 1px solid rgb(255, 115, 0);
+				box-shadow: 0 1px 0 0 rgb(255, 115, 0);
+				+ {
+					label {
+						color: rgb(255, 115, 0);
+					}
+				}
+			}
+		}
+		label {
+			color: rgb(92, 92, 92);
+			font-size: 15px;
+			font-weight: 600;
+		}
+		.prefix {
+			color: rgb(97, 97, 97);
+		}
+		.prefix.active {
+			color: rgb(255, 115, 0);
+		}
+	}
+	.move {
+		input[type=radio] {
+			&:checked {
+				+ {
+                    span{
+                        &:after {
+                            background-color: rgb(255, 115, 0);
+                            border: rgb(255, 115, 0);
+                        }
+                    }
+				}
+			}
+		}
+		input[type=checkbox] {
+			&:checked {
+				+{
+					span{
+                        &:after {
+                            background-color: rgb(255, 115, 0);
+                            border: rgb(255, 115, 0);
+                        }
+                    }
+				}
+			}
+		}
+	}
+	.btn {
+		background-color: rgb(255, 115, 0);
+		color: rgb(49, 49, 49);
+		font-weight: 600;
+	}
+}
+.row {
+	margin: 0;
+}
+.move {
+	margin-left: 13px;
+}
+.btn {
+	font-size: 20px;
+	width: 100%;
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+#footer {
+    border-top: 5px solid rgb(206, 108, 28);
+    #margin {
+        display: flex;
+        .center {
+            width: 100%;
+            text-align: center;
+            a {
+                display: inline-block;
+                margin: 7px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:992px) {
+	#back {
+		height: 400px;
+	}
+}
+@media only screen and (max-width:600px) {
+	#back {
+		height: 350px;
+	}
+	.fomr {
+		h2 {
+			font-size: 34px;
+			font-weight: 500;
+		}
+	}
+	#sm-height {
+		height: auto;
+	}
+	.move {
+		margin-left: 0px;
+	}
+	#footer {
+		background-image: url('../img/png.png');
+		background-position: 95% 84%;
+		background-size: 150px;
+        background-repeat: no-repeat;
+        #margin {
+            flex-direction: column;
+            #_1 {
+                order: 1;
+            }
+            #_2 {
+                order: 2;
+            }
+            #_3 {
+                order: 3;
+            }
+            .center {
+                text-align: left;
+            }
+        }
+	}
+}
