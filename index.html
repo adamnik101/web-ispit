@@ -9,7 +9,7 @@
   <!-- 4.7 font awesome for .click effect jquery  -->
   <script src="https://use.fontawesome.com/7fabce2783.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.min.css"/>
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -21,43 +21,6 @@
     <meta name="description" content="Dogfinder is a dog adoption website where you can choose from over 15,000+ dogs! Start your search now!">
 </head>
 <body>
-  <!-- TOASTS -->
-  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
-    <div class="toast" id="t1" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <i class="fas fa-paw"></i>
-        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
-        <small>1 sec ago</small>
-      </div>
-      <div class="toast-body">
-        <p id="toastChange1">Dog has been removed from favorites.</p>
-      </div>
-    </div>
-  </div>
-  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
-    <div class="toast" id="t2" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <i class="fas fa-paw"></i>
-        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
-        <small>1 sec ago</small>
-      </div>
-      <div class="toast-body">
-        <p id="toastChange2">Dog has been removed from favorites.</p>
-      </div>
-    </div>
-  </div>
-  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
-    <div class="toast" id="t3" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <i class="fas fa-paw"></i>
-        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
-        <small>1 sec ago</small>
-      </div>
-      <div class="toast-body">
-        <p id="toastChange3">Dog has been removed from favorites.</p>
-      </div>
-    </div>
-  </div>
   <!-- FIXED NAVIGATION FOR MOBILE  -->
     <div class="container-fluid fixed-top d-md-none" id="smallResNav">
     <div class="row">
@@ -272,7 +235,7 @@
                 <div class="form-row align-items-center justify-content-around">
                     <div class="col-sm-6 col-md-3 my-1">
                     <label class="mr-sm-2 font-weight-bold" for="age">Age:</label>
-                    <select class="selectpicker form-control mr-sm-2" data-style="btn-new" id="age">
+                    <select class="custom-select form-control mr-sm-2" data-style="btn-new" id="age">
                         <option selected>Any</option>
                         <option value="1">Puppy</option>
                         <option value="2">Young</option>
@@ -282,7 +245,7 @@
                     </div>
                     <div class="col-sm-6 col-md-3 my-1">
                         <label class="mr-sm-2 font-weight-bold" for="gender">Gender:</label>
-                        <select class="selectpicker form-control mr-sm-2" data-style="btn-new" id="gender">
+                        <select class="custom-select form-control mr-sm-2" data-style="btn-new" id="gender">
                             <option selected>Any</option>
                             <option value="1">Male</option>
                             <option value="2">Female</option>
@@ -290,7 +253,7 @@
                         </div>
                         <div class="col-sm-6 col-md-3 my-1">
                             <label class="mr-sm-2 font-weight-bold" for="size">Size:</label>
-                            <select class="selectpicker form-control mr-sm-2" data-style="btn-new" id="size">
+                            <select class="custom-select form-control mr-sm-2" data-style="btn-new" id="size">
                                 <option selected>Any</option>
                                 <option value="1">Small</option>
                                 <option value="2">Medium</option>
@@ -299,7 +262,7 @@
                             </div>
                             <div class="col-sm-6 col-md-3 my-1">
                                 <label class="mr-sm-2 font-weight-bold" for="goodwith">Good with:</label>
-                                <select class="selectpicker form-control mr-sm-2" data-style="btn-new" id="goodwith">
+                                <select class="custom-select form-control mr-sm-2" id="goodwith">
                                     <option selected>Any</option>
                                     <option value="1">Dogs</option>
                                     <option value="2">Cats</option>
@@ -429,6 +392,43 @@
           </div>
       </div>
     </div>
+    <!-- TOASTS -->
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t1" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <i class="fas fa-paw"></i>
+        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
+        <small>1 sec ago</small>
+      </div>
+      <div class="toast-body">
+        <p id="toastChange1">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t2" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <i class="fas fa-paw"></i>
+        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
+        <small>1 sec ago</small>
+      </div>
+      <div class="toast-body">
+        <p id="toastChange2">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
+  <div aria-live="polite" aria-atomic="true" class="abs" data-autohide="false">
+    <div class="toast" id="t3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <i class="fas fa-paw"></i>
+        <strong class="mr-auto"> &nbsp; Dogfinder.</strong>
+        <small>1 sec ago</small>
+      </div>
+      <div class="toast-body">
+        <p id="toastChange3">Dog has been removed from favorites.</p>
+      </div>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -481,14 +481,5 @@ function change(dog1) {
     $('[data-toggle="tooltip"]').tooltip()
   })
       </script>
-
-      <!-- BOOTSTRAP SELECT OPTION CHANGE -->
-      
-      <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
   </body>
 </html>

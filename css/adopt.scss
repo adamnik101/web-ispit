@@ -17,25 +17,10 @@ body{
     color: $gray-dark;
     background-color: $orange;
     border: 0px;
-}
-.toast{
-    position: fixed;
-    bottom: 20px;
-    left:20px;
-    border-bottom: 3px solid $orange;
-    border-radius: 0;
-    font-size: 15px;
-    z-index: 20;
-    pointer-events: none; // allow clicking through toast container
-        .toast-header{
-            background-color: $gray-dark;
-            border: none;
-        }
-        .toast-body{
-            background-color: $gray-dark;
-            color: $orange;
-            font-style: italic;
-        }
+    &:hover{
+        background-color: $gray;
+        color: $orange;
+    }
 }
 #nav{
     background-color: $gray-dark;
@@ -87,9 +72,13 @@ body{
     .orange{
         color: $orange;
     }
-    .btn{
-        background-color: $orange;
-        color: $gray-dark;
+}
+form{
+    .custom-select, input[type=text].form-control{
+        &:focus{
+            box-shadow: 0px 0px 3px 2px $orange;
+            border:1px solid $orange;
+        }
     }
 }
 #gore{
@@ -198,37 +187,27 @@ body{
         font-size: 20px;
     }
 }
-.btn-new, input[type=text]{
-    background-color: $gray-dark !important;
-    color: $orange !important;
-    font-size: 20px;
-    &:focus{
-        box-shadow: none;
-        border: none;
-    }
-    &:active{
-        box-shadow:none;
-    }
-}
-.dropdown-menu{
-    background-color: $gray-dark !important;
-    font-size: 20px;
-    .dropdown-item{
-        color: $orange !important;
-        &:hover{
-            background-color: $gray !important;
-        }
-    }
-    .active{
-        background-color: $orange !important;
-        color: $gray-dark !important;
-        &:hover{
-            color: $orange !important;
-        }
-    }
-}
 .back{
     background-color: #f4f4f4;
+}
+.toast{
+    position: fixed;
+    bottom: 20px;
+    left:20px;
+    border-bottom: 3px solid $orange;
+    border-radius: 0;
+    font-size: 15px;
+    z-index: 20;
+    pointer-events: none; // allow clicking through toast container
+        .toast-header{
+            background-color: $gray-dark;
+            border: none;
+        }
+        .toast-body{
+            background-color: $gray-dark;
+            color: $orange;
+            font-style: italic;
+        }
 }
 @media only screen and (max-width: 575.98px) { 
     h2{
