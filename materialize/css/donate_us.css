@@ -3,39 +3,43 @@ body {
   font-family: 'Meera Inimai', sans-serif;
 }
 
-#gorelinks {
+.navbar-fixed #gorelinks {
   height: 40px;
 }
 
-#gorelinks .logo {
+.navbar-fixed #gorelinks .logo {
   font-size: 30px;
   font-weight: 500;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-#gorelinks li a {
+.navbar-fixed #gorelinks li a {
   font-size: 18px;
   font-weight: 400;
   border-right: 3px solid transparent;
 }
 
-#gorelinks li a:hover {
+.navbar-fixed #gorelinks li a:hover {
   border-right: 3px solid #ff7b00;
   color: #fff !important;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
-#gorelinks li a .fas {
+.navbar-fixed #gorelinks li a .fas {
   line-height: 2;
   padding-right: 5px;
 }
 
-#gorelinks li:hover .fas {
+.navbar-fixed #gorelinks li:hover .fas {
   color: #fff !important;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+
+.dropdown-content {
+  z-index: 100;
 }
 
 .dropdown-content li span {
@@ -241,6 +245,9 @@ body {
   .fomr h2 {
     font-size: 34px;
     font-weight: 500;
+  }
+  .fomr .col {
+    padding: 0;
   }
   #sm-height {
     height: auto;
