@@ -6,8 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <!-- Web icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
-  <!-- 4.7 font awesome for .click effect jquery  -->
-  <script src="https://use.fontawesome.com/7fabce2783.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/home.min.css"/>
     <!-- Responsive -->
@@ -296,7 +294,7 @@
             <div class="card-footer">
               <a href="laki.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" onclick="change('toastChange1')" class="floating" id="f1" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange1')" class="floating" id="f1" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="far fa-heart" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 justify-content-around d-flex p-3">
@@ -311,7 +309,7 @@
               <div class="card-footer">
                 <a href="seth.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
               </div>
-              <a href="#!" onclick="change('toastChange2')" class="floating" id="f2" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+              <a href="#!" onclick="change('toastChange2')" class="floating" id="f2" data-toggle="tooltip" data-placement="top" title="I love it!"><i class="far fa-heart" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 justify-content-around d-flex p-3">
@@ -326,7 +324,7 @@
             <div class="card-footer">
               <a href="elsie.html"><button type="button" class="btn btn-dark">Adopt!</button></a>
             </div>
-            <a href="#!" onclick="change('toastChange3')" class="floating" id="f3"data-toggle="tooltip" data-placement="top" title="I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#!" onclick="change('toastChange3')" class="floating" id="f3"data-toggle="tooltip" data-placement="top" title="I love it!"><i class="far fa-heart" aria-hidden="true"></i></a>
             </div>
           </div>
         <div class="col-sm-6 col-md-12 col-lg-3 justify-content-around d-flex p-3">
@@ -472,10 +470,14 @@ function change(dog1) {
 }
    // CHANGE FA ICONS ON CLICK JQUERY 
    $(document).ready(function () {
-                  $('.fa').click(function () {
-                      $(this).toggleClass('fa-heart-o fa-heart');
-                  });
-              });
+                $('.floating').click(function () {
+                  if($("i", this).hasClass() == "fa-heart"){
+                    $("i", this).toggleClass("fas far");}
+                      else{        
+                    $("i", this).toggleClass("far fas");      
+                }
+                });
+            });
               // TOOLTIPS
               $(function () {
     $('[data-toggle="tooltip"]').tooltip()
